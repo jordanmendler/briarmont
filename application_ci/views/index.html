@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="place description here" />
+<meta name="viewport" content="width = device-width;" /> 
+<!-- define the width of the page as no wider than the width of the viewport --> 
+
+<link rel="stylesheet" href="/css/styles.css" />
+<link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="/css/_print/main.css" media="print" /> 
+<!--[if IE]><link rel="stylesheet" href="_/css/_patches/win-ie-all.css" media="all" /><![endif]--> 
+	<!--[if IE 7]><link rel="stylesheet" href="_/css/_patches/win-ie7.css" media="all" /><![endif]--> 
+	<!--[if lt IE 7]><link rel="stylesheet" href="_/css/_patches/win-ie-old.css" media="all" /><![endif]--> 
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
+<link href='http://fonts.googleapis.com/css?family=Michroma' rel='/stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='/stylesheet' type='text/css' />
+<link href="http://fonts.googleapis.com/css?family=Mako:regular" rel="/stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise:regular" rel="/stylesheet" type="text/css" />
+<link rel="icon" href="favicon.ico" />
+
+<!--[if IE ]><link rel="stylesheet" href="/css/ie.css" media="all"/><![endif]--> 
+<title>Bar template</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+	<body>
+	
+<div id="crossslide"></div> 				
+<div id="wrapper">
+	<div id="inner-wrap">
+		<header>
+     <section id="logo">
+     	   <h1><a href="#">CuppyBar </a></h1>
+		   <p>â˜… est. 1958 â˜…</p>
+	 </section><!--logo ends here-->
+	</header>
+	
+<div id="main-content">
+	<section id="frontpage">
+		<article>
+			<h1>The atmosphere of <span class="coloured">luxury.</span> The spirit of <span class="coloured">delight.</span></h1>
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies 
+			eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. 
+			Aenean ultricies mi vitae est. Mauris placerat eleifend leo. </p>
+		</article>
+	</section><!--frontpage ends here-->
+<div id="panel">
+<div class="panelblock">
+	<nav id="slide-nav">
+	<a href="/menu">Ã€ la carte | </a> 
+	<a href="/about">about us | </a>
+	<a href="/location">location | </a>
+	<a href="/contact">contact | </a>
+	<a href="/service">services | </a>
+	<a href="/gallery">gallery</a>
+	</nav>
+</div><!--panelblock ends here-->
+</div><!--panel ends here-->
+<div id="bottom-nav"><a class="btn-slide" href="#">
+		<div id="triangle-down"></div>
+		navigation</a></div>
+	</div><!--main-content ends here-->
+		</div><!--inner-wrap ends here-->
+</div><!--wrapper ends here-->
+	
+<!--scripts-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<script src="/js/cross-slide.js"></script>
+<script>
+$(document).ready(function(){
+	$(".btn-slide").click(function(){
+		$("#panel").slideToggle("slow");
+		$(this).toggleClass("active"); return false;
+	});
+	 
+});
+</script>
+<!--sliding background-->
+<script> 
+//<!--
+	$(function(){
+	   $('#crossslide').crossSlide({
+	    speed: 20,
+  fade: 1
+	}, [
+	  {
+		src:  '/images/bg1.jpg', dir:'up',
+	  }, 
+	  {
+	  	src: '/images/bg2.jpg', dir:'down',
+	  }
+	]);
+	});
+// --> 
+</script> 
+	</body>
+</html>

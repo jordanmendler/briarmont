@@ -1,0 +1,81 @@
+header{
+       background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#90000000,endColorstr=#90000000);
+       zoom: 1;
+}
+#inner-wrap{
+		width:980px;
+}
+#frontpage{
+	   background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#90000000,endColorstr=#90000000);
+       zoom: 1;
+}
+#bottom-nav{
+	   background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#90000000,endColorstr=#90000000);
+       zoom: 1;
+}
+#panel, #panel-hours{
+	   background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#90607860,endColorstr=#90607860);
+       zoom: 1;
+}
+#main-content-index{
+	   background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#90000000,endColorstr=#90000000);
+       zoom: 1;
+}
+.panel-image{
+	background:url(images/staff.jpg);
+	background-repeat:no-repeat;
+}
+.panelinfo2{
+	width:710px;
+}
+.panel-image{
+	margin:0 20px;
+	background:url(images/staff.jpg);
+	background-repeat:no-repeat;
+	width:710px;
+	height:330px;
+	position:relative;
+}
+nav#top{
+	   background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#90000000,endColorstr=#90000000);
+       zoom: 1;
+}
+h3.trigger{
+	border-bottom:1px solid #ddd;
+	padding:0.8em 0.8em 0 0.8em;
+	background:url(images/trigger.jpg);
+	background-repeat:no-repeat;
+	height:30px;
+	margin:0;
+	cursor:pointer;
+}
+#main-content-index-additional{
+	   background:transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#90000000,endColorstr=#90000000);
+       zoom: 1;
+}
+.panelinfo ol.history li{
+	width:216px;
+}
+
+#buttonsubmit{
+	padding:5px 0;
+}
+#entry_0{
+	background:url(images/input-name.png);
+	background-repeat:no-repeat;
+}
+#entry_1{
+	background:url(images/input-email.png);
+		background-repeat:no-repeat;
+}
+#entry_2{
+	background:url(images/textarea.png);
+		background-repeat:repeat;
+}

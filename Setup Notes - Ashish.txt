@@ -1,0 +1,12 @@
+To modify types of products (i.e. delete products, change names, add new types of cigars, etc):
+	Go to redirects.php controller file, add a new function for the new product/cigar name, and follow the format of the previous cigar products (remember to make a unique id).
+	Go to cigars.php view file, add a new panel for the product details, etc. Then, make an add to cart link with it leading to /redirects/'new_cigar_name'
+	Then, add a column in the MySQL database for the type of cigar created following the same format as the other cigars
+	Then, go to the cart.php controller file, and edit the "foreach ($cart_contents as $key => $value)" in the last function "store_order" so that the new cigar created is also processed by adding an if statement with the cigar's new product id specified in the redirects.php file.
+	Then, go the function send_email() in the same cart.php controller file and add the respective fields for the new cigar types.
+	Then, open the orderadmin.php controller file and edit the send_email() function and again, add the respective fields for the new cigar types.
+	Then, open the order_details.php view file and add an entry to "Briarmont Cigar Quantities" for the new cigar type.
+
+As of now, tax is calculated at a flat 9% tax, however, if you desire to modify this:
+	Go to the cart.php view file and on line 65, just modify the number being multiplied (currently .9).
+
