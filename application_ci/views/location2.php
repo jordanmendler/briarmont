@@ -15,10 +15,10 @@
 	<!--[if IE 7]><link rel="stylesheet" href="_/css/_patches/win-ie7.css" media="all" /><![endif]--> 
 	<!--[if lt IE 7]><link rel="stylesheet" href="_/css/_patches/win-ie-old.css" media="all" /><![endif]--> 
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
-<link href='http://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css' />
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
-<link href="http://fonts.googleapis.com/css?family=Mako:regular" rel="stylesheet" type="text/css" />
-<link href="http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise:regular" rel="stylesheet" type="text/css" />
+<link href='//fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css' />
+<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+<link href="//fonts.googleapis.com/css?family=Mako:regular" rel="stylesheet" type="text/css" />
+<link href="//fonts.googleapis.com/css?family=Waiting+for+the+Sunrise:regular" rel="stylesheet" type="text/css" />
 <link rel="icon" href="favicon.png" />
 
 <!--[if IE ]><link rel="stylesheet" href="/css/ie.css" media="all"/><![endif]--> 
@@ -43,10 +43,10 @@
 	<!--[if IE 7]><link rel="stylesheet" href="_/css/_patches/win-ie7.css" media="all" /><![endif]--> 
 	<!--[if lt IE 7]><link rel="stylesheet" href="_/css/_patches/win-ie-old.css" media="all" /><![endif]--> 
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
-<link href='http://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css' />
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
-<link href="http://fonts.googleapis.com/css?family=Mako:regular" rel="stylesheet" type="text/css" />
-<link href="http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise:regular" rel="stylesheet" type="text/css" />
+<link href='//fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css' />
+<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+<link href="//fonts.googleapis.com/css?family=Mako:regular" rel="stylesheet" type="text/css" />
+<link href="//fonts.googleapis.com/css?family=Waiting+for+the+Sunrise:regular" rel="stylesheet" type="text/css" />
 <link href="styles.css" rel="stylesheet" type="text/css" />
 <title>Briarmont Location and address</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
@@ -85,7 +85,7 @@
 <div id="map_canvas"></div>
 
 <!--scripts-->
-<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="//maps.google.com/maps/api/js?sensor=false"></script>
 <script>
  		function initialize() {
 				var latlng = new google.maps.LatLng(34.052677,-118.438817);

@@ -8,10 +8,10 @@
 <link rel="stylesheet" href="/css/styles.css" />
 <link rel="stylesheet" href="/css/main.css" />
 <link rel="stylesheet" href="/css/_print/main.css" media="print" /> 
-<link href='http://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css' />
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
-<link href="http://fonts.googleapis.com/css?family=Mako:regular" rel="stylesheet" type="text/css" />
-<link href="http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise:regular" rel="stylesheet" type="text/css" />
+<link href='//fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css' />
+<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+<link href="//fonts.googleapis.com/css?family=Mako:regular" rel="stylesheet" type="text/css" />
+<link href="//fonts.googleapis.com/css?family=Waiting+for+the+Sunrise:regular" rel="stylesheet" type="text/css" />
 <!--[if IE ]><link rel="stylesheet" href="/css/ie.css" media="all"/><![endif]--> 
 
 	<!-- Add fancyBox main JS and CSS files -->

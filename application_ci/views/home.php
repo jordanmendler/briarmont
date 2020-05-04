@@ -12,10 +12,10 @@
 	<!--[if IE 7]><link rel="stylesheet" href="_/css/_patches/win-ie7.css" media="all" /><![endif]--> 
 	<!--[if lt IE 7]><link rel="stylesheet" href="_/css/_patches/win-ie-old.css" media="all" /><![endif]--> 
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
-<link href='http://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css' />
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
-<link href="http://fonts.googleapis.com/css?family=Mako:regular" rel="stylesheet" type="text/css" />
-<link href="http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise:regular" rel="stylesheet" type="text/css" />
+<link href='//fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css' />
+<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+<link href="//fonts.googleapis.com/css?family=Mako:regular" rel="stylesheet" type="text/css" />
+<link href="//fonts.googleapis.com/css?family=Waiting+for+the+Sunrise:regular" rel="stylesheet" type="text/css" />
     <!-- Owl Carousel Assets -->
     <link href="/css/carousel/owl.carousel.css" rel="stylesheet">
     <link href="/css/carousel/owl.theme.css" rel="stylesheet">
