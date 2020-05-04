@@ -19,7 +19,7 @@
 <body background="images/band/Background.jpg">	
 <div id="wrapper">
 <ul class="head_menu">
-	<li><a style="color: #fff;" href="https://customtobacco.staging.thevelozgroup.com/fathers-day-bands">Design Custom Cigars</a></li>
+	<li><a style="color: #fff;" href="https://customtobacco.com/fathers-day-bands">Design Custom Cigars</a></li>
 	</ul>
 <div id="inner-wrap">
 	<header>
