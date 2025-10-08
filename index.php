@@ -1,205 +1,195 @@
 <?php
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+$host = $_SERVER['HTTP_HOST'];
+$baseDomain = "$protocol://$host";
 
-/*
- *---------------------------------------------------------------
- * APPLICATION ENVIRONMENT
- *---------------------------------------------------------------
- *
- * You can load different configurations depending on your
- * current environment. Setting the environment also influences
- * things like logging and error reporting.
- *
- * This can be set to anything, but default usage is:
- *
- *     development
- *     testing
- *     production
- *
- * NOTE: If you change these, also change the error_reporting() code below
- *
- */
-	define('ENVIRONMENT', 'development');
-/*
- *---------------------------------------------------------------
- * ERROR REPORTING
- *---------------------------------------------------------------
- *
- * Different environments will require different levels of error reporting.
- * By default development will show errors but testing and live will hide them.
- */
+$path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$path = trim($path, '/');
+$segments = explode('/', $path);
+$subPage = mb_strtolower($segments[0]) ?? '';
 
-if (defined('ENVIRONMENT'))
-{
-	switch (ENVIRONMENT)
-	{
-		case 'development':
-			error_reporting(E_ALL);
-		break;
-	
-		case 'testing':
-		case 'production':
-			error_reporting(0);
-		break;
-
-		default:
-			exit('The application environment is not set correctly.');
-	}
+if (!empty($subPage)) {
+    if ('briarmont-estates-sylmar' == $subPage) {
+        $embedUrl = 'https://docs.google.com/presentation/d/e/2PACX-1vSBPSD0H6-XTqXFleIAJaIniWeIUrHbXe0nu1BUMWQsi7Wv8aPUKBBkWGWBTCUtakNjY0JtRRAZqcbH/pubembed?start=false&loop=false&delayms=5000';
+    } elseif('briarmont-estates-lake-palmdale' == $subPage) {
+        $embedUrl = 'https://docs.google.com/presentation/d/e/2PACX-1vSpTSMeNwxhrXEesVCxONdYNQQpLsc-rzBETV67Sy0upQ381LXqtOBXzU437opz0oKGTCFFNFlop8Zf/pubembed?start=false&loop=false&delayms=5000';
+    } else {
+        $embedUrl = '';
+    }
 }
+?>
+<!DOCTYPE html>
+<html lang="en">
 
-/*
- *---------------------------------------------------------------
- * SYSTEM FOLDER NAME
- *---------------------------------------------------------------
- *
- * This variable must contain the name of your "system" folder.
- * Include the path if the folder is not in the same  directory
- * as this file.
- *
- */
-	$system_path = 'system_ci';
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-/*
- *---------------------------------------------------------------
- * APPLICATION FOLDER NAME
- *---------------------------------------------------------------
- *
- * If you want this front controller to use a different "application"
- * folder then the default one you can set its name here. The folder
- * can also be renamed or relocated anywhere on your server.  If
- * you do, use a full server path. For more info please see the user guide:
- * http://codeigniter.com/user_guide/general/managing_apps.html
- *
- * NO TRAILING SLASH!
- *
- */
-	$application_folder = 'application_ci';
+    <title>Briarmont Estates & Mansion</title>
+    <meta name="description"
+        content='Briarmont Estates & Mansion'>
 
-/*
- * --------------------------------------------------------------------
- * DEFAULT CONTROLLER
- * --------------------------------------------------------------------
- *
- * Normally you will set your default controller in the routes.php file.
- * You can, however, force a custom routing by hard-coding a
- * specific controller class/function here.  For most applications, you
- * WILL NOT set your routing here, but it's an option for those
- * special instances where you might want to override the standard
- * routing in a specific front controller that shares a common CI installation.
- *
- * IMPORTANT:  If you set the routing here, NO OTHER controller will be
- * callable. In essence, this preference limits your application to ONE
- * specific controller.  Leave the function name blank if you need
- * to call functions dynamically via the URI.
- *
- * Un-comment the $routing array below to use this feature
- *
- */
-	// The directory name, relative to the "controllers" folder.  Leave blank
-	// if your controller is not in a sub-folder within the "controllers" folder
-	// $routing['directory'] = '';
+    <meta property="og:title" content="Briarmont Estates & Mansion">
+    <meta property="og:description"
+        content='Briarmont Estates & Mansion'>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://briarmont.com/">
+    <meta property="og:image" content="https://briarmont.com/images/briarmont-logo.png">
 
-	// The controller class file name.  Example:  Mycontroller
-	// $routing['controller'] = '';
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/app.css">
 
-	// The controller function you wish to be called.
-	// $routing['function']	= '';
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4F3QM34MF6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'G-4F3QM34MF6');
+    </script>
+</head>
+<body>
+    <section>
+        <div class="is-flex is-flex-direction-column is-align-items-center content-wrap">
+            <a href="/" title="Briarmont Estates & Mansion">
+                <img src="images/briarmont-logo.png" class="logo-img" alt="Briarmont Estates & Mansion" />
+            </a>
+<?php
 
-/*
- * -------------------------------------------------------------------
- *  CUSTOM CONFIG VALUES
- * -------------------------------------------------------------------
- *
- * The $assign_to_config array below will be passed dynamically to the
- * config class when initialized. This allows you to set custom config
- * items or override any default config values found in the config.php file.
- * This can be handy as it permits you to share one application between
- * multiple front controller files, with each file containing different
- * config values.
- *
- * Un-comment the $assign_to_config array below to use this feature
- *
- */
-	// $assign_to_config['name_of_config_item'] = 'value of config item';
+if (empty($embedUrl) && empty($subPage)) {
+    ?>
+    <div class="container is-max-desktop">
+        <div class="columns">
+            <div class="column is-half-tablet is-full-mobile">
+                <a href="/briarmont-estates-sylmar" target="_blank" title="Briarmont Estates, Sylmar">
+                    <div class="box">
+                        <figure class="image is-4by3">
+                            <img src="/images/Briarmont_Estates_Sylmar.png" />
+                        </figure>
+                        <div class="content p-4">
+                            <ul>
+                                <li>Briarmont Estates, Sylmar</li>
+                                <li>20 homes on 2 acres</li>
+                                <li>Phase I Investment: $2,000,000</li>
+                                <li>Phase II Investment: $6,000,000</li>
+                                <li>Exit Price: $20,814,921</li>
+                                <li>Exit Multiple: 5-cap</li>
+                                <li>Levered IRR: 47.21%</li>
+                                <li>Equity Multiple: 6.19x</li>
+                                <li>Hold Length: 60 months</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column is-half-tablet is-full-mobile">
+                <a href="/briarmont-estates-lake-palmdale" target="_blank" title="Briarmont Estates, Lake Palmdale">
+                    <div class="box">
+                        <figure class="image is-4by3">
+                            <img src="/images/Briarmont_Estates_Lake_Palmdale.png" />
+                        </figure>
+                        <div class="content p-4">
+                            <ul>
+                                <li>Briarmont Estates, Lake Palmdale</li>
+                                <li>52 homes on 13.7 acres</li>
+                                <li>Phase I Investment: $1,000,000</li>
+                                <li>Phase II Investment: $6,500,000</li>
+                                <li>Exit Price: $20,433,251</li>
+                                <li>Exit Multiple: 6-cap</li>
+                                <li>Levered IRR: 38.16%</li>
+                                <li>Equity Multiple: 3.73x</li>
+                                <li>Hold Length: 60 months</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <?php
+} else if(!empty($embedUrl) && !empty($subPage)) {
+    ?>
+    <div class="iframe-container">
+        <iframe 
+            id="slides-iframe"
+            src="<?=$embedUrl.'&rm=minimal'?>"
+            frameborder="0"
+            allow="fullscreen; clipboard-write"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <?php
+} else {
+    header("Location: $baseDomain/", true, 302);
+}
+?>
+            <div class="email-form-container container py-6">
+                <div id="form-message" class="has-text-centered has-text-weight-bold mb-4">
+                </div>
 
+                <form id="emailForm" class="box mx-auto" style="max-width: 600px;">
+                    <div class="field is-grouped is-grouped-centered">
+                        <div class="control is-expanded">
+                            <input
+                                class="input is-medium" 
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Join for more information"
+                                required 
+                            />
+                        </div>
+                        <div class="control">
+                            <button type="submit" class="button is-primary is-medium">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeVTOMrAAAAANPoVCUoBOfr9EPkbTMjXHwnVth0"></script>
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function (e) {
+            e.preventDefault();
 
+            const email = document.getElementById('email').value;
+            const messageDiv = document.getElementById('form-message');
 
-// --------------------------------------------------------------------
-// END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
-// --------------------------------------------------------------------
+            messageDiv.textContent = '';
+            messageDiv.classList.remove('has-text-success', 'has-text-danger');
 
-/*
- * ---------------------------------------------------------------
- *  Resolve the system path for increased reliability
- * ---------------------------------------------------------------
- */
-
-	// Set the current directory correctly for CLI requests
-	if (defined('STDIN'))
-	{
-		chdir(dirname(__FILE__));
-	}
-
-	if (realpath($system_path) !== FALSE)
-	{
-		$system_path = realpath($system_path).'/';
-	}
-
-	// ensure there's a trailing slash
-	$system_path = rtrim($system_path, '/').'/';
-
-	// Is the system path correct?
-	if ( ! is_dir($system_path))
-	{
-		exit("Your system folder path does not appear to be set correctly. Please open the following file and correct this: ".pathinfo(__FILE__, PATHINFO_BASENAME));
-	}
-
-/*
- * -------------------------------------------------------------------
- *  Now that we know the path, set the main path constants
- * -------------------------------------------------------------------
- */
-	// The name of THIS file
-	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
-
-	// The PHP file extension
-	// this global constant is deprecated.
-	define('EXT', '.php');
-
-	// Path to the system folder
-	define('BASEPATH', str_replace("\\", "/", $system_path));
-
-	// Path to the front controller (this file)
-	define('FCPATH', str_replace(SELF, '', __FILE__));
-
-	// Name of the "system folder"
-	define('SYSDIR', trim(strrchr(trim(BASEPATH, '/'), '/'), '/'));
-
-
-	// The path to the "application" folder
-	if (is_dir($application_folder))
-	{
-		define('APPPATH', $application_folder.'/');
-	}
-	else
-	{
-		if ( ! is_dir(BASEPATH.$application_folder.'/'))
-		{
-			exit("Your application folder path does not appear to be set correctly. Please open the following file and correct this: ".SELF);
-		}
-
-		define('APPPATH', BASEPATH.$application_folder.'/');
-	}
-
-/*
- * --------------------------------------------------------------------
- * LOAD THE BOOTSTRAP FILE
- * --------------------------------------------------------------------
- *
- * And away we go...
- *
- */
-require_once BASEPATH.'core/CodeIgniter.php';
-
-/* End of file index.php */
-/* Location: ./index.php */
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6LeVTOMrAAAAANPoVCUoBOfr9EPkbTMjXHwnVth0', { action: 'submit_email' }).then(function (token) {
+                    fetch('/submit.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                        body: `email=${encodeURIComponent(email)}&token=${encodeURIComponent(token)}`
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            messageDiv.textContent = 'Success';
+                            messageDiv.classList.add('has-text-success');
+                            document.getElementById('email').value = '';
+                            
+                            setTimeout(() => {
+                                messageDiv.textContent = '';
+                            }, 5000);
+                        } else {
+                            messageDiv.textContent = data.message || 'Error';
+                            messageDiv.classList.add('has-text-danger');
+                        }
+                    })
+                    .catch(() => {
+                        messageDiv.textContent = 'Error';
+                        messageDiv.classList.add('has-text-danger');
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
