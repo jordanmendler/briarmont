@@ -52,107 +52,90 @@ if (!empty($subPage)) {
     </script>
 </head>
 <body>
+
+<?php
+
+if (empty($embedUrl) && empty($subPage)) {
+    ?>
     <section>
         <div class="is-flex is-flex-direction-column is-align-items-center content-wrap">
             <a href="/" title="Briarmont Estates & Mansion">
                 <img src="images/briarmont-logo.png" class="logo-img" alt="Briarmont Estates & Mansion" />
             </a>
-<?php
-
-if (empty($embedUrl) && empty($subPage)) {
-    ?>
-    <div class="container">
-        <div class="columns is-multiline">
-            <div class="column is-12-mobile is-6-tablet is-flex">
-                <a href="/ontario-auto-row" class="is-flex is-flex-direction-column is-justify-content-stretch has-width-100">
-                    <div class="box is-flex is-flex-direction-column is-justify-content-stretch has-height-100">
-                        <figure class="image is-4by3">
-                            <img src="/images/Ontario_Auto_Row.png" />
-                        </figure>
-                        <div class="content mt-4">
-                            <ul>
-                                <li>Ontario Auto Row</li>
-                                <li>Purchase Price: $1,800,000</li>
-                                <li>Investment: $1,000,000</li>
-                                <li>Exit Price: $8,072,171</li>
-                                <li>Exit Multiple: 7-cap</li>
-                                <li>Levered IRR: 39.53%</li>
-                                <li>Equity Multiple: 3.94x</li>
-                                <li>Cash on Cash: 37%</li>
-                                <li>Yield on Cost: 20.61%</li>
-                                <li>Hold Length: 60 months</li>
-                            </ul>
-                        </div>
+            <div class="container">
+                <div class="columns is-multiline">
+                    <div class="column is-12-mobile is-6-tablet is-flex">
+                        <a href="/ontario-auto-row" class="is-flex is-flex-direction-column is-justify-content-stretch has-width-100">
+                            <div class="box is-flex is-flex-direction-column is-justify-content-stretch has-height-100">
+                                <figure class="image is-4by3">
+                                    <img src="/images/Ontario_Auto_Row.png" />
+                                </figure>
+                                <div class="content mt-4">
+                                    <ul>
+                                        <li>Ontario Auto Row</li>
+                                        <li>Purchase Price: $1,800,000</li>
+                                        <li>Investment: $1,000,000</li>
+                                        <li>Exit Price: $8,072,171</li>
+                                        <li>Exit Multiple: 7-cap</li>
+                                        <li>Levered IRR: 39.53%</li>
+                                        <li>Equity Multiple: 3.94x</li>
+                                        <li>Cash on Cash: 37%</li>
+                                        <li>Yield on Cost: 20.61%</li>
+                                        <li>Hold Length: 60 months</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-            <div class="column is-12-mobile is-6-tablet is-flex">
-                <a href="/briarmont-estates-sylmar" class="is-flex is-flex-direction-column is-justify-content-stretch has-width-100">
-                    <div class="box is-flex is-flex-direction-column is-justify-content-stretch has-height-100">
-                        <figure class="image is-4by3">
-                            <img src="/images/Briarmont_Estates_Sylmar.png" />
-                        </figure>
-                        <div class="content mt-4">
-                            <ul>
-                                <li>Briarmont Estates, Sylmar</li>
-                                <li>20 homes on 2 acres</li>
-                                <li>Phase I Investment: $2,000,000</li>
-                                <li>Phase II Investment: $6,000,000</li>
-                                <li>Exit Price: $20,814,921</li>
-                                <li>Exit Multiple: 5-cap</li>
-                                <li>Levered IRR: 47.21%</li>
-                                <li>Equity Multiple: 6.19x</li>
-                                <li>Hold Length: 60 months</li>
-                            </ul>
-                        </div>
+                    <div class="column is-12-mobile is-6-tablet is-flex">
+                        <a href="/briarmont-estates-sylmar" class="is-flex is-flex-direction-column is-justify-content-stretch has-width-100">
+                            <div class="box is-flex is-flex-direction-column is-justify-content-stretch has-height-100">
+                                <figure class="image is-4by3">
+                                    <img src="/images/Briarmont_Estates_Sylmar.png" />
+                                </figure>
+                                <div class="content mt-4">
+                                    <ul>
+                                        <li>Briarmont Estates, Sylmar</li>
+                                        <li>20 homes on 2 acres</li>
+                                        <li>Phase I Investment: $2,000,000</li>
+                                        <li>Phase II Investment: $6,000,000</li>
+                                        <li>Exit Price: $20,814,921</li>
+                                        <li>Exit Multiple: 5-cap</li>
+                                        <li>Levered IRR: 47.21%</li>
+                                        <li>Equity Multiple: 6.19x</li>
+                                        <li>Hold Length: 60 months</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-            <div class="column is-12-mobile is-6-tablet is-flex">
-                <a href="/briarmont-estates-lake-palmdale" class="is-flex is-flex-direction-column is-justify-content-stretch has-width-100">
-                    <div class="box is-flex is-flex-direction-column is-justify-content-stretch has-height-100">
-                        <figure class="image is-4by3">
-                            <img src="/images/Briarmont_Estates_Lake_Palmdale.png" />
-                        </figure>
-                        <div class="content mt-4">
-                            <ul>
-                                <li>Briarmont Estates, Lake Palmdale</li>
-                                <li>52 homes on 13.7 acres</li>
-                                <li>Phase I Investment: $1,000,000</li>
-                                <li>Phase II Investment: $6,500,000</li>
-                                <li>Exit Price: $20,433,251</li>
-                                <li>Exit Multiple: 6-cap</li>
-                                <li>Levered IRR: 38.16%</li>
-                                <li>Equity Multiple: 3.73x</li>
-                                <li>Hold Length: 60 months</li>
-                            </ul>
-                        </div>
+                    <div class="column is-12-mobile is-6-tablet is-flex">
+                        <a href="/briarmont-estates-lake-palmdale" class="is-flex is-flex-direction-column is-justify-content-stretch has-width-100">
+                            <div class="box is-flex is-flex-direction-column is-justify-content-stretch has-height-100">
+                                <figure class="image is-4by3">
+                                    <img src="/images/Briarmont_Estates_Lake_Palmdale.png" />
+                                </figure>
+                                <div class="content mt-4">
+                                    <ul>
+                                        <li>Briarmont Estates, Lake Palmdale</li>
+                                        <li>52 homes on 13.7 acres</li>
+                                        <li>Phase I Investment: $1,000,000</li>
+                                        <li>Phase II Investment: $6,500,000</li>
+                                        <li>Exit Price: $20,433,251</li>
+                                        <li>Exit Multiple: 6-cap</li>
+                                        <li>Levered IRR: 38.16%</li>
+                                        <li>Equity Multiple: 3.73x</li>
+                                        <li>Hold Length: 60 months</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
-        </div>
-    </div>
-    <?php
-} else if(!empty($embedUrl) && !empty($subPage)) {
-    ?>
-    <div class="iframe-container">
-        <iframe 
-            id="slides-iframe"
-            src="<?=$embedUrl.'&rm=minimal'?>"
-            frameborder="0"
-            allow="fullscreen; clipboard-write"
-            allowfullscreen>
-        </iframe>
-    </div>
-    <?php
-} else {
-    header("Location: $baseDomain/", true, 302);
-}
-?>
             <div class="email-form-container container py-6">
                 <div id="form-message" class="has-text-centered has-text-weight-bold mb-4">
                 </div>
-
                 <form id="emailForm" class="box mx-auto" style="max-width: 600px;">
                     <div class="field is-grouped is-grouped-centered">
                         <div class="control is-expanded">
@@ -175,6 +158,51 @@ if (empty($embedUrl) && empty($subPage)) {
             </div>
         </div>
     </section>
+    <?php
+} else if(!empty($embedUrl) && !empty($subPage)) {
+    ?>
+    <section class="p-0">
+        <div class="is-flex is-flex-direction-column is-clipped" style="height: 100vh">
+            <div class="columns is-marginless m-0 p-0" style="height: 20vh">
+                <div class="column is-6 is-flex is-align-items-center p-2">
+                    <a href="/" title="Briarmont Estates & Mansion" class="is-flex is-align-items-center">
+                        <img src="images/briarmont-logo.png" class="logo-img" style="max-height: 18vh" alt="Briarmont Estates & Mansion" />
+                    </a>
+                </div>
+                <div class="column is-6 is-flex is-align-items-center p-2">
+                    <div class="email-form-container is-flex-grow-1">
+                        <div id="form-message" class="has-text-centered has-text-weight-bold is-size-7"></div>
+                        <form id="emailForm" class="box m-0 py-2 px-3">
+                            <div class="field is-grouped is-grouped-centered m-0">
+                                <div class="control is-expanded">
+                                    <input class="input" type="email" id="email" name="email" 
+                                        placeholder="Join for more information" required />
+                                </div>
+                                <div class="control">
+                                    <button type="submit" class="button is-primary">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="is-flex-grow-1 m-0 p-2 is-clipped" style="height: 80vh">
+                <div class="iframe-container m-0" style="height: 100%">
+                    <iframe 
+                        id="slides-iframe"
+                        src="<?= $embedUrl . '&rm=minimal' ?>" frameborder="0"
+                            style="width: 100%; height: 100%" allow="fullscreen; clipboard-write" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <?php
+} else {
+    header("Location: $baseDomain/", true, 302);
+}
+?>
     <script src="https://www.google.com/recaptcha/api.js?render=6LeVTOMrAAAAANPoVCUoBOfr9EPkbTMjXHwnVth0"></script>
     <script>
         document.getElementById('emailForm').addEventListener('submit', function (e) {
