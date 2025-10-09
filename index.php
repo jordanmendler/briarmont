@@ -9,7 +9,9 @@ $segments = explode('/', $path);
 $subPage = mb_strtolower($segments[0]) ?? '';
 
 if (!empty($subPage)) {
-    if ('briarmont-estates-sylmar' == $subPage) {
+    if ('ontario-auto-row' == $subPage) {
+        $embedUrl = 'https://docs.google.com/presentation/d/e/2PACX-1vQ5vT00Sz5KdqbzT5XBdgZRC5D8lRQtWej7Ulq2p3Imp5zDG9T1zkaAj6nLBkGOU2VPJoJjlSPBjVYC/pubembed?start=false&loop=false&delayms=5000';
+    } elseif ('briarmont-estates-sylmar' == $subPage) {
         $embedUrl = 'https://docs.google.com/presentation/d/e/2PACX-1vSBPSD0H6-XTqXFleIAJaIniWeIUrHbXe0nu1BUMWQsi7Wv8aPUKBBkWGWBTCUtakNjY0JtRRAZqcbH/pubembed?start=false&loop=false&delayms=5000';
     } elseif('briarmont-estates-lake-palmdale' == $subPage) {
         $embedUrl = 'https://docs.google.com/presentation/d/e/2PACX-1vSpTSMeNwxhrXEesVCxONdYNQQpLsc-rzBETV67Sy0upQ381LXqtOBXzU437opz0oKGTCFFNFlop8Zf/pubembed?start=false&loop=false&delayms=5000';
@@ -59,15 +61,38 @@ if (!empty($subPage)) {
 
 if (empty($embedUrl) && empty($subPage)) {
     ?>
-    <div class="container is-max-desktop">
-        <div class="columns">
-            <div class="column is-half-tablet is-full-mobile">
-                <a href="/briarmont-estates-sylmar" target="_blank" title="Briarmont Estates, Sylmar">
-                    <div class="box">
+    <div class="container">
+        <div class="columns is-multiline">
+            <div class="column is-12-mobile is-6-tablet is-flex">
+                <a href="/ontario-auto-row" class="is-flex is-flex-direction-column is-justify-content-stretch has-width-100">
+                    <div class="box is-flex is-flex-direction-column is-justify-content-stretch has-height-100">
+                        <figure class="image is-4by3">
+                            <img src="/images/Ontario_Auto_Row.png" />
+                        </figure>
+                        <div class="content mt-4">
+                            <ul>
+                                <li>Ontario Auto Row</li>
+                                <li>Purchase Price: $1,800,000</li>
+                                <li>Investment: $1,000,000</li>
+                                <li>Exit Price: $8,072,171</li>
+                                <li>Exit Multiple: 7-cap</li>
+                                <li>Levered IRR: 39.53%</li>
+                                <li>Equity Multiple: 3.94x</li>
+                                <li>Cash on Cash: 37%</li>
+                                <li>Yield on Cost: 20.61%</li>
+                                <li>Hold Length: 60 months</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column is-12-mobile is-6-tablet is-flex">
+                <a href="/briarmont-estates-sylmar" class="is-flex is-flex-direction-column is-justify-content-stretch has-width-100">
+                    <div class="box is-flex is-flex-direction-column is-justify-content-stretch has-height-100">
                         <figure class="image is-4by3">
                             <img src="/images/Briarmont_Estates_Sylmar.png" />
                         </figure>
-                        <div class="content p-4">
+                        <div class="content mt-4">
                             <ul>
                                 <li>Briarmont Estates, Sylmar</li>
                                 <li>20 homes on 2 acres</li>
@@ -83,13 +108,13 @@ if (empty($embedUrl) && empty($subPage)) {
                     </div>
                 </a>
             </div>
-            <div class="column is-half-tablet is-full-mobile">
-                <a href="/briarmont-estates-lake-palmdale" target="_blank" title="Briarmont Estates, Lake Palmdale">
-                    <div class="box">
+            <div class="column is-12-mobile is-6-tablet is-flex">
+                <a href="/briarmont-estates-lake-palmdale" class="is-flex is-flex-direction-column is-justify-content-stretch has-width-100">
+                    <div class="box is-flex is-flex-direction-column is-justify-content-stretch has-height-100">
                         <figure class="image is-4by3">
                             <img src="/images/Briarmont_Estates_Lake_Palmdale.png" />
                         </figure>
-                        <div class="content p-4">
+                        <div class="content mt-4">
                             <ul>
                                 <li>Briarmont Estates, Lake Palmdale</li>
                                 <li>52 homes on 13.7 acres</li>
