@@ -45,6 +45,7 @@ if (!empty($subPage)) {
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link href="https://vjs.zencdn.net/8.23.4/video-js.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/app.css">
 
     <!-- Google tag (gtag.js) -->
@@ -70,24 +71,6 @@ if (empty($embedUrl) && empty($subPage)) {
             </a>
             <div class="container">
                 <div class="columns is-multiline">
-                    <div class="column is-12-mobile is-4-tablet is-flex">
-                        <div class="is-flex is-flex-direction-column is-justify-content-stretch has-width-100">
-                            <div class="box is-flex is-flex-direction-column is-justify-content-stretch has-height-100">
-                                <figure class="image is-4by3">
-                                    <img src="/images/SCENE_08-NORTH.png" />
-                                </figure>
-                                <div class="content mt-4">
-                                    <ul>
-                                        <li>Container City</li>
-                                        <li>Mixed-Use Project</li>
-                                        <li>In Planning Stage</li>
-                                        <li><a href="https://photos.app.goo.gl/wbLAZRWU71K9ahdc7" target="_blank">Video</a></li>
-                                        <li><a href="/container-city" >Presentation</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <!-- <div class="column is-12-mobile is-6-tablet is-flex">
                         <a href="/ontario-auto-row" class="is-flex is-flex-direction-column is-justify-content-stretch has-width-100">
                             <div class="box is-flex is-flex-direction-column is-justify-content-stretch has-height-100">
@@ -154,6 +137,24 @@ if (empty($embedUrl) && empty($subPage)) {
                                 </div>
                             </div>
                         </a>
+                    </div>
+                    <div class="column is-12-mobile is-4-tablet is-flex">
+                        <div class="is-flex is-flex-direction-column is-justify-content-stretch has-width-100">
+                            <div class="box is-flex is-flex-direction-column is-justify-content-stretch has-height-100">
+                                <figure class="image is-4by3">
+                                    <img src="/images/SCENE_08-NORTH.png" />
+                                </figure>
+                                <div class="content mt-4">
+                                    <ul>
+                                        <li>Container City</li>
+                                        <li>Mixed-Use Project</li>
+                                        <li>In Planning Stage</li>
+                                        <li><a href="javascript:;" onClick="openModal(this)">Video</a></li>
+                                        <li><a href="/container-city" >Presentation</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -227,7 +228,29 @@ if (empty($embedUrl) && empty($subPage)) {
     header("Location: $baseDomain/", true, 302);
 }
 ?>
+    <div id="dynamic-modal" class="modal" style="display: none;">
+        <span id="modal-close-btn" class="close-btn">&times;</span>
+        <div class="modal-content">
+            <video
+                id="cc-video"
+                class="video-js vjs-fill"
+                controls
+                preload="auto"
+                data-setup="{}"
+            >
+                <source src="video/VID-20251009-WA0012.mp4" type="video/mp4" />
+                <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank"
+                        >supports HTML5 video</a
+                    >
+                </p>
+            </video>
+        </div>
+    </div>
     <script src="https://www.google.com/recaptcha/api.js?render=6LeVTOMrAAAAANPoVCUoBOfr9EPkbTMjXHwnVth0"></script>
+    <script src="https://vjs.zencdn.net/8.23.4/video.min.js"></script>
     <script>
         document.getElementById('emailForm').addEventListener('submit', function (e) {
             e.preventDefault();
@@ -267,6 +290,41 @@ if (empty($embedUrl) && empty($subPage)) {
                 });
             });
         });
+
+        const openModal = () => {
+            const modal = document.getElementById('dynamic-modal');
+
+            modal.style.display = 'block';
+            document.documentElement.classList.add('modal-open');
+            document.body.classList.add('modal-open');
+            const player = videojs('cc-video');
+            player.play();
+            return false
+        };
+
+        window.onload = function(e){
+            window.onclick = function (event) {
+                const modal = document.getElementById('dynamic-modal');
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                    document.documentElement.classList.remove('modal-open');
+                    document.body.classList.remove('modal-open');
+                    const player = videojs('cc-video');
+                    player.pause();
+                }
+            };
+
+            const closeBtn = document.getElementById('modal-close-btn');
+
+            closeBtn.onclick = function () {
+                const modal = document.getElementById('dynamic-modal');
+                modal.style.display = 'none';
+                document.documentElement.classList.remove('modal-open');
+                document.body.classList.remove('modal-open');
+                const player = videojs('cc-video');
+                player.pause();
+            };
+        }
     </script>
 </body>
 </html>
