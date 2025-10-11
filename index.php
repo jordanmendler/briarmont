@@ -9,7 +9,9 @@ $segments = explode('/', $path);
 $subPage = mb_strtolower($segments[0]) ?? '';
 
 if (!empty($subPage)) {
-    if ('ontario-auto-row' == $subPage) {
+    if ('container-city' == $subPage) {
+        $embedUrl = 'https://docs.google.com/presentation/d/e/2PACX-1vRRKhM-9JUBJ9Ys09ctsfxxbuSz9V1a_oGj_H-kHZrT4MHGdCfsLJo4uZ1ek1nGz--PJ57AlCaD6skg/pubembed?start=false&loop=false&delayms=5000';
+    } elseif ('ontario-auto-row' == $subPage) {
         $embedUrl = 'https://docs.google.com/presentation/d/e/2PACX-1vQ5vT00Sz5KdqbzT5XBdgZRC5D8lRQtWej7Ulq2p3Imp5zDG9T1zkaAj6nLBkGOU2VPJoJjlSPBjVYC/pubembed?start=false&loop=false&delayms=5000';
     } elseif ('briarmont-estates-sylmar' == $subPage) {
         $embedUrl = 'https://docs.google.com/presentation/d/e/2PACX-1vSBPSD0H6-XTqXFleIAJaIniWeIUrHbXe0nu1BUMWQsi7Wv8aPUKBBkWGWBTCUtakNjY0JtRRAZqcbH/pubembed?start=false&loop=false&delayms=5000';
@@ -38,6 +40,10 @@ if (!empty($subPage)) {
     <meta property="og:url" content="https://briarmont.com/">
     <meta property="og:image" content="https://briarmont.com/images/briarmont-logo.png">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/app.css">
 
@@ -64,7 +70,25 @@ if (empty($embedUrl) && empty($subPage)) {
             </a>
             <div class="container">
                 <div class="columns is-multiline">
-                    <div class="column is-12-mobile is-6-tablet is-flex">
+                    <div class="column is-12-mobile is-4-tablet is-flex">
+                        <div class="is-flex is-flex-direction-column is-justify-content-stretch has-width-100">
+                            <div class="box is-flex is-flex-direction-column is-justify-content-stretch has-height-100">
+                                <figure class="image is-4by3">
+                                    <img src="/images/SCENE_08-NORTH.png" />
+                                </figure>
+                                <div class="content mt-4">
+                                    <ul>
+                                        <li>Container City</li>
+                                        <li>Mixed-Use Project</li>
+                                        <li>In Planning Stage</li>
+                                        <li><a href="https://photos.app.goo.gl/wbLAZRWU71K9ahdc7" target="_blank">Video</a></li>
+                                        <li><a href="/container-city" >Presentation</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="column is-12-mobile is-6-tablet is-flex">
                         <a href="/ontario-auto-row" class="is-flex is-flex-direction-column is-justify-content-stretch has-width-100">
                             <div class="box is-flex is-flex-direction-column is-justify-content-stretch has-height-100">
                                 <figure class="image is-4by3">
@@ -86,12 +110,12 @@ if (empty($embedUrl) && empty($subPage)) {
                                 </div>
                             </div>
                         </a>
-                    </div>
-                    <div class="column is-12-mobile is-6-tablet is-flex">
+                    </div> -->
+                    <div class="column is-12-mobile is-4-tablet is-flex">
                         <a href="/briarmont-estates-sylmar" class="is-flex is-flex-direction-column is-justify-content-stretch has-width-100">
                             <div class="box is-flex is-flex-direction-column is-justify-content-stretch has-height-100">
                                 <figure class="image is-4by3">
-                                    <img src="/images/Briarmont_Estates_Sylmar.png" />
+                                    <img src="/images/Briarmont_Estates_Sylmar.jpg" />
                                 </figure>
                                 <div class="content mt-4">
                                     <ul>
@@ -109,7 +133,7 @@ if (empty($embedUrl) && empty($subPage)) {
                             </div>
                         </a>
                     </div>
-                    <div class="column is-12-mobile is-6-tablet is-flex">
+                    <div class="column is-12-mobile is-4-tablet is-flex">
                         <a href="/briarmont-estates-lake-palmdale" class="is-flex is-flex-direction-column is-justify-content-stretch has-width-100">
                             <div class="box is-flex is-flex-direction-column is-justify-content-stretch has-height-100">
                                 <figure class="image is-4by3">
@@ -163,10 +187,10 @@ if (empty($embedUrl) && empty($subPage)) {
     ?>
     <section class="p-0">
         <div class="is-flex is-flex-direction-column is-clipped" style="height: 100vh">
-            <div class="columns is-marginless m-0 p-0" style="height: 20vh">
+            <div class="columns is-marginless m-0 p-0" style="height: 10vh">
                 <div class="column is-6 is-flex is-align-items-center p-2">
                     <a href="/" title="Briarmont Estates & Mansion" class="is-flex is-align-items-center">
-                        <img src="images/briarmont-logo.png" class="logo-img" style="max-height: 18vh" alt="Briarmont Estates & Mansion" />
+                        <img src="images/briarmont-logo.png" class="logo-img" style="height:50px;margin-left: 10px;padding: 0" alt="Briarmont Estates & Mansion" />
                     </a>
                 </div>
                 <div class="column is-6 is-flex is-align-items-center p-2">
@@ -186,7 +210,7 @@ if (empty($embedUrl) && empty($subPage)) {
                     </div>
                 </div>
             </div>
-            <div class="is-flex-grow-1 m-0 p-2 is-clipped" style="height: 80vh">
+            <div class="is-flex-grow-1 m-0 p-2 is-clipped" style="height: 90vh">
                 <div class="iframe-container m-0" style="height: 100%">
                     <iframe 
                         id="slides-iframe"
