@@ -188,13 +188,13 @@ if (empty($embedUrl) && empty($subPage)) {
     ?>
     <section class="p-0">
         <div class="is-flex is-flex-direction-column is-clipped" style="height: 100vh">
-            <div class="columns is-marginless m-0 p-0" style="height: 10vh">
+            <div class="columns is-marginless m-0 p-0" style="height: 15vh">
                 <div class="column is-6 is-flex is-align-items-center p-2">
                     <a href="/" title="Briarmont Estates & Mansion" class="is-flex is-align-items-center">
-                        <img src="images/briarmont-logo.png" class="logo-img" style="height:50px;margin-left: 10px;padding: 0" alt="Briarmont Estates & Mansion" />
+                        <img src="images/briarmont-logo.png" class="logo-img" style="max-height:100px;margin-left: 10px;padding: 0" alt="Briarmont Estates & Mansion" />
                     </a>
                 </div>
-                <div class="column is-6 is-flex is-align-items-center p-2">
+                <div class="column is-3 is-offset-3 is-flex is-align-items-center p-2">
                     <div class="email-form-container is-flex-grow-1">
                         <div id="form-message" class="has-text-centered has-text-weight-bold is-size-7"></div>
                         <form id="emailForm" class="box m-0 py-2 px-3">
@@ -211,12 +211,12 @@ if (empty($embedUrl) && empty($subPage)) {
                     </div>
                 </div>
             </div>
-            <div class="is-flex-grow-1 m-0 p-2 is-clipped" style="height: 90vh">
+            <div class="is-flex-grow-1 m-0 is-clipped" style="height: 85vh">
                 <div class="iframe-container m-0" style="height: 100%">
                     <iframe 
                         id="slides-iframe"
                         src="<?= $embedUrl . '&rm=minimal' ?>" frameborder="0"
-                            style="width: 100%; height: 100%" allow="fullscreen; clipboard-write" allowfullscreen>
+                            style="width: 100%; height: 100%; max-height:none;" allow="fullscreen; clipboard-write" allowfullscreen>
                         </iframe>
                     </div>
                 </div>
