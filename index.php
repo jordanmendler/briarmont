@@ -188,7 +188,7 @@ if (empty($embedUrl) && empty($subPage)) {
     ?>
     <section class="p-0">
         <div class="is-flex is-flex-direction-column is-clipped" style="height: 100vh">
-            <div class="columns is-marginless m-0 p-0" style="height: 15vh">
+            <div class="columns is-marginless m-0 p-0">
                 <div class="column is-6 is-flex is-align-items-center p-2">
                     <a href="/" title="Briarmont Estates & Mansion" class="is-flex is-align-items-center">
                         <img src="images/briarmont-logo.png" class="logo-img" style="max-height:100px;margin-left: 10px;padding: 0" alt="Briarmont Estates & Mansion" />
