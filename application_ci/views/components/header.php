@@ -249,7 +249,7 @@ $(window).load(preload([
 								}
 
 								// Generate link and close li
-								if ($subnav == '#Active' || $subnav == '#Projects') {
+								if ($subnav == '#Active' || $subnav == '#Projects' || $subnav == '#Retail' || $subnav == '#Industrial' || $subnav == '#Development') {
 								    echo '<a class="project-filter" data-trigger="'. str_replace("#", '', $subnav) .'" href="' . $subnav . '">' . $nav[$subnav] . '</a></li>';
 								} else {
 								    echo '<a href="' . $subnav . '">' . $nav[$subnav] . '</a></li>';

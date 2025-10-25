@@ -7,7 +7,7 @@
 class Portfolio_Model extends CI_Model {
 
     var $divisions = array('Capital', 'Ventures', 'Industries', 'Innovations', 'Entertainment',);
-    var $types = array('Active', 'Development', 'Projects');
+    var $types = array('Active', 'Development', 'Projects', 'Industrial', 'Self-Storage', 'Retail', 'Multifamily',);
     /*
       var $divisions =	array(	'Consumer Products', 'Electronics', 'Entertainment & Leisure', 'Technology', 'Automotive', 'Brokerage', 'Transportation', 'Retail & Wholesale', 'Apparel & Accessories', 'Food Beverages & Tobacco', 'Manufacturing', 'Services', 'Consulting', 'Financial Services', 'Legal', 'Service', 'Software');
      */
@@ -50,7 +50,7 @@ class Portfolio_Model extends CI_Model {
 	  'types'		=> array ( 'Projects', ),
 	  ), */
 
-	array(
+	/* array(
 	    'name' => 'Beverly Hills Chairs',
 	    'summary' => 'The leading refurbisher and reseller of Herman Miller Aeron office chairs in the country, Beverly Hills Chairs furnishes offices and seats executives nationwide. By providing high-end ergonomic office furniture affordably, we help companies enhance their professional environments, improve productivity and employee satisfaction, and reduce liability and exposure.',
 	    'icon' => '/images/companies/beverlyhills.png',
@@ -67,8 +67,8 @@ class Portfolio_Model extends CI_Model {
 	    ),
 	    'industries' => 'Consumer Products, Retail & Wholesale',
 	    'types' => array('Active',),
-	),
-	array(
+	), */
+	/* array(
 	    'name' => 'ShipMe',
 	    'summary' => 'ShipMe is a technology-first 4PL that uses data analytics to streamline and optimize logistics for its customers. The easy to use platform helps customers realize vast savings along with faster delivery times and a better customer experience.',
 	    'icon' => '/images/companies/shipme.png',
@@ -85,8 +85,8 @@ class Portfolio_Model extends CI_Model {
 	    ),
 	    'industries' => 'Consumer Products, Retail & Wholesale',
 	    'types' => array('Development',),
-	),
-	array(
+	), */
+	/* array(
 	    'name' => 'KM Squared',
 	    'summary' => 'KM² uses data analytics to identify undervalued assets in multi-family and commercial real estate. Working with our partners we then execute upon these value-add opportunities to realize strong rates of returns for partners and investors alike.',
 	    'icon' => '/images/companies/km-squared.png',
@@ -102,8 +102,8 @@ class Portfolio_Model extends CI_Model {
 	    ),
 	    'industries' => 'Consumer Products, Retail & Wholesale, Apparel & Accessories',
 	    'types' => array('Active',),
-	),
-	array(
+	), */
+	/* array(
 	    'name' => 'Briarmont',
 	    'summary' => 'Briarmont is a lifestyle brand that offers a line of premium, hand-crafted cigars. Our tobacco is sourced from the Dominican Republic and Nicaragua, and we offer only products of the finest quality. Our cigars are offered in limited quantities exclusively through Custom Tobacco and a select number of partners.',
 	    'icon' => '/images/companies/briarmont.png',
@@ -119,8 +119,8 @@ class Portfolio_Model extends CI_Model {
 	    ),
 	    'industries' => 'Consumer Products, Retail & Wholesale, Apparel & Accessories',
 	    'types' => array('Active',),
-	),
-	array(
+	), */
+	/* array(
 	    'name' => 'Westholme',
 	    'summary' => 'Something big is coming soon!',
 	    'icon' => '/images/companies/westholme/logo.png',
@@ -136,8 +136,8 @@ class Portfolio_Model extends CI_Model {
 	    ),
 	    'industries' => 'Consumer Products, Retail & Wholesale, Apparel & Accessories',
 	    'types' => array('Development',),
-	),
-	array(
+	), */
+	/* array(
 	    'name' => 'BeCalm',
 	    'summary' => 'Something big is coming soon!',
 	    'icon' => '/images/companies/becalm/logo.png',
@@ -153,8 +153,8 @@ class Portfolio_Model extends CI_Model {
 	    ),
 	    'industries' => 'Consumer Products, Retail & Wholesale, Apparel & Accessories',
 	    'types' => array('Development',),
-	),
-	array(
+	), */
+	/* array(
 	    'name' => 'Bjorn',
 	    'summary' => 'Something big is coming soon!',
 	    'icon' => '/images/companies/bjornoffice/logo.png',
@@ -170,8 +170,8 @@ class Portfolio_Model extends CI_Model {
 	    ),
 	    'industries' => 'Consumer Products, Retail & Wholesale, Apparel & Accessories',
 	    'types' => array('Development',),
-	),
-	array(
+	), */
+	/* array(
 	    'name' => 'Custom Lobby',
 	    'summary' => 'Custom Lobby owns and operates a portfolio of e-commerce sites that allow users to purchase customized products. Using a proprietary software platform developed in-house, Custom Lobby targets niche products across industries.',
 	    'icon' => '/images/companies/customlobby.png',
@@ -188,8 +188,8 @@ class Portfolio_Model extends CI_Model {
 	    ),
 	    'industries' => 'Software, Industries',
 	    'types' => array('Development',),
-	),
-	array(
+	), */
+	/* array(
 	    'name' => 'Custom Tobacco',
 	    'summary' => 'A one-of-a-kind online platform that enables users to create customized premium cigars in real time, Custom Tobacco provides customers with a fun and easy way to design and purchase private label custom cigars. Custom Tobacco caters to individuals in search of the perfect gift; companies seeking a unique promotional item; event organizers hoping to elevate their party, wedding, golf tournament, etc.; and cigar aficionados.',
 	    'icon' => '/images/companies/custom-tobacco.png',
@@ -206,8 +206,8 @@ class Portfolio_Model extends CI_Model {
 	    ),
 	    'industries' => 'Consumer Products, Retail & Wholesale, Food Beverage & Tobacco',
 	    'types' => array('Active',),
-	),
-	array(
+	), */
+	/* array(
 	    'name' => 'Flyspray',
 	    'summary' => 'An open-source web-based task management system, Flyspray provides a platform for businesses, software developers and project managers to more simply and efficiently track work flow, and in turn, effectively manage and complete important projects. Briarmont Estates & Mansion is the lead developer of Flyspray.',
 	    'icon' => '/images/companies/flyspray.png',
@@ -223,8 +223,8 @@ class Portfolio_Model extends CI_Model {
 	    ),
 	    'industries' => 'Computer, Technology',
 	    'types' => array('Projects',),
-	),
-	array(
+	), */
+	/* array(
 	    'name' => 'Gay.com',
 	    'summary' => 'Briarmont Estates & Mansion led a technology takeover and revitalization of Gay.com, a dating application and website with more than three million members that was once the market leader in gay dating. Gay.com was acquired four months into the turnaround.',
 	    'icon' => '/images/companies/gay_logo.png',
@@ -241,9 +241,9 @@ class Portfolio_Model extends CI_Model {
 	    ),
 	    'industries' => 'Gay.com, Online Dating',
 	    'types' => array('Projects',),
-	),
+	), */
 
-	      array(
+	     /*  array(
 	      'name'		=> 'The Taylor Method',
 	      'summary'	=> 'The Taylor Method is a leading Software as a Service (SaaS) product for financial advisors. Taylor provides clients with a Learning Management System (LMS) and a variety of sales management tools to help advisors grow their practices. The Veloz Group serves as the technology arm of The Taylor Method forging a strong partnership that has produced ever-growing results.',
 	      'icon'		=> '/images/companies/taylor-method.png',
@@ -259,7 +259,7 @@ class Portfolio_Model extends CI_Model {
 	      ),
 	      'industries'	=> 'Brokerage, Financial Services',
 	      'types'		=> array ( 'Projects', ),
-	      ),
+	      ), */
 	/*
 	  array(
 	  'name'		=> 'KiwiSpider',
@@ -316,7 +316,7 @@ class Portfolio_Model extends CI_Model {
 	  'industries'	=> 'Market, Design',
 	  'types'		=> array ( 'Development', ),
 	  ), */
-	array(
+	/* array(
 	    'name' => 'Veloz Solutions',
 	    'summary' => 'Veloz Solutions helps organizations utilize technology in creative ways to resolve pain points and capitalize on new opportunities. Leveraging our team of CTO-level technologists and Google-caliber engineers, through advanced technology consulting and custom software development, we craft innovative technology solutions to solve challenging business problems.',
 	    'icon' => '/images/companies/vs-logo.png',
@@ -333,8 +333,8 @@ class Portfolio_Model extends CI_Model {
 	    ),
 	    'industries' => 'Ideas, Solutions',
 	    'types' => array('Active',),
-	),
-	array(
+	), */
+	/* array(
 	    'name' => 'Virtually Israel',
 	    'summary' => "Virtually Israel brings Israel to life and to countless people across the globe through virtual reality experiences showcasing Israel's two most prominent cities, Tel Aviv and Jerusalem. The Veloz Group produced the Virtually Israel VR experiences, which are currently utilized by organizations around the world, including Israel's Ministry of Tourism.",
 	    'icon' => '/images/companies/vr-logo.png',
@@ -351,7 +351,7 @@ class Portfolio_Model extends CI_Model {
 	    ),
 	    'industries' => 'Virtual Reality',
 	    'types' => array('Projects',),
-	),
+	), */
 	/*array(
 	    'name' => 'Brand Engagement Partners',
 	    'summary' => "Brand Engagement Partners specializes in aligning clients with earned media opportunities in nationally recognized outlets. Through enhanced exposure and strategic branding, we help companies broaden their audience and customer base and more effectively engage existing customers and prospects.",
@@ -590,6 +590,380 @@ class Portfolio_Model extends CI_Model {
 	      'industries'	=> 'Consumer Products, Retail & Wholesale',
 	      'types'		=> array ( 'Projects', ),
 	      ), */
+            array(
+                'name' => 'Briarmont Estates, Sylmar',
+                'summary' => "20 homes on 2 acres",
+                'icon' => '/images/portfolio/Briarmont_Estates_Sylmar.jpg',
+                'blog_image' => '/images/portfolio/Briarmont_Estates_Sylmar.jpg',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/Briarmont_Estates_Sylmar.jpg',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Multifamily',),
+            ),
+            array(
+                'name' => 'Briarmont Estates, Lake Palmdale',
+                'summary' => "52 homes on 13.7 acres",
+                'icon' => '/images/portfolio/Briarmont_Estates_Lake_Palmdale.png',
+                'blog_image' => '/images/portfolio/Briarmont_Estates_Lake_Palmdale.png',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/Briarmont_Estates_Lake_Palmdale.png',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Multifamily',),
+            ),
+            array(
+                'name' => 'Lancaster Auto Row',
+                'summary' => "Lancaster, CA<br/>25,400 SF",
+                'icon' => '/images/portfolio/45003-45021-Yucca-Ave-Lancaster-CA-Building-Photo-5-LargeHighDefinition.jpg',
+                'blog_image' => '/images/portfolio/45003-45021-Yucca-Ave-Lancaster-CA-Building-Photo-5-LargeHighDefinition.jpg',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/45003-45021-Yucca-Ave-Lancaster-CA-Building-Photo-5-LargeHighDefinition.jpg',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Projects', 'Industrial'),
+            ),
+            array(
+                'name' => 'Palmdale Central Storage',
+                'summary' => "Palmdale, CA<br/>13,627 SF",
+                'icon' => '/images/portfolio/826-E-Avenue-R-Palmdale-CA-Building-Photo-1-Large.jpg',
+                'blog_image' => '/images/portfolio/826-E-Avenue-R-Palmdale-CA-Building-Photo-1-Large.jpg',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/826-E-Avenue-R-Palmdale-CA-Building-Photo-1-Large.jpg',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Industrial',),
+            ),
+            array(
+                'name' => 'Industrial Technologies Building, Palmdale',
+                'summary' => "Palmdale, CA<br/>16,000 SF",
+                'icon' => '/images/portfolio/37631-6th-St-E-Palmdale-CA-Building-Photo-1-Large.jpg',
+                'blog_image' => '/images/portfolio/37631-6th-St-E-Palmdale-CA-Building-Photo-1-Large.jpg',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/37631-6th-St-E-Palmdale-CA-Building-Photo-1-Large.jpg',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Industrial',),
+            ),
+            array(
+                'name' => 'The Shops at Pacific View',
+                'summary' => "Ventura, CA<br/>164,433 SF",
+                'icon' => '/images/portfolio/Seritage-Ventura-Building-Photo-2-LargeHighDefinition.png',
+                'blog_image' => '/images/portfolio/Seritage-Ventura-Building-Photo-2-LargeHighDefinition.png',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/Seritage-Ventura-Building-Photo-2-LargeHighDefinition.png',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Retail',),
+            ),
+            array(
+                'name' => 'Pacific View Automotive',
+                'summary' => "Ventura, CA<br/>14,130 SF",
+                'icon' => '/images/portfolio/3217-S-Garfield-Ave-Commerce-CA-Building-Photo-2-LargeHighDefinition.jpg',
+                'blog_image' => '/images/portfolio/3217-S-Garfield-Ave-Commerce-CA-Building-Photo-2-LargeHighDefinition.jpg',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/3217-S-Garfield-Ave-Commerce-CA-Building-Photo-2-LargeHighDefinition.jpg',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Retail', 'Industrial'),
+            ),
+            array(
+                'name' => 'Industrial Technologies Building, Denver',
+                'summary' => "Denver, CO<br/>62,114 SF",
+                'icon' => '/images/portfolio/3625-E-48th-Ave-Denver-CO-Primary-Photo-1-LargeHighDefinition.jpg',
+                'blog_image' => '/images/portfolio/3625-E-48th-Ave-Denver-CO-Primary-Photo-1-LargeHighDefinition.jpg',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/3625-E-48th-Ave-Denver-CO-Primary-Photo-1-LargeHighDefinition.jpg',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Industrial',),
+            ),
+            array(
+                'name' => 'The Kauai Post',
+                'summary' => "Lihue, HI<br/>10,620 SF",
+                'icon' => '/images/portfolio/4441-Rice-St-Lihue-HI-USPS-Lihue-1-LargeHighDefinition.jpg',
+                'blog_image' => '/images/portfolio/4441-Rice-St-Lihue-HI-USPS-Lihue-1-LargeHighDefinition.jpg',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/4441-Rice-St-Lihue-HI-USPS-Lihue-1-LargeHighDefinition.jpg',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Industrial', 'Retail'),
+            ),
+            array(
+                'name' => 'Oxnard Auto Row',
+                'summary' => "Oxnard, CA<br/>7,104 SF",
+                'icon' => '/images/portfolio/0c7487d33ca14cf3914993c5747b34c5_3000x2000_resize.jpg',
+                'blog_image' => '/images/portfolio/0c7487d33ca14cf3914993c5747b34c5_3000x2000_resize.jpg',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/0c7487d33ca14cf3914993c5747b34c5_3000x2000_resize.jpg',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Industrial',),
+            ),
+            array(
+                'name' => 'Industrial Technologies Building, Port of LA',
+                'summary' => "San Pedro, CA<br/>25,710 SF",
+                'icon' => '/images/portfolio/1002-S-Gaffey-St-San-Pedro-CA-Gaffey-Side-1-LargeHighDefinition.jpg',
+                'blog_image' => '/images/portfolio/1002-S-Gaffey-St-San-Pedro-CA-Gaffey-Side-1-LargeHighDefinition.jpg',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/1002-S-Gaffey-St-San-Pedro-CA-Gaffey-Side-1-LargeHighDefinition.jpg',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Industrial', 'Retail'),
+            ),
+            array(
+                'name' => 'Briarmont Executive Suites, Downtown San Bernadino',
+                'summary' => "San Bernardino, CA<br/>23,235 SF",
+                'icon' => '/images/portfolio/1380-E-Highland-Ave-San-Bernardino-CA-Building-Photo-1-LargeHighDefinition.jpg',
+                'blog_image' => '/images/portfolio/1380-E-Highland-Ave-San-Bernardino-CA-Building-Photo-1-LargeHighDefinition.jpg',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/1380-E-Highland-Ave-San-Bernardino-CA-Building-Photo-1-LargeHighDefinition.jpg',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Development',),
+            ),
+            array(
+                'name' => 'Briarmont Executive Suites, Bakersfield',
+                'summary' => "Bakersfield, CA<br/>557,687 SF",
+                'icon' => '/images/portfolio/900-Old-River-Rd-Bakersfield-CA-DJI_0578-1-LargeHighDefinition.jpg',
+                'blog_image' => '/images/portfolio/900-Old-River-Rd-Bakersfield-CA-DJI_0578-1-LargeHighDefinition.jpg',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/900-Old-River-Rd-Bakersfield-CA-DJI_0578-1-LargeHighDefinition.jpg',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Development',),
+            ),
+            array(
+                'name' => 'Stott Building',
+                'summary' => "Detroit, MI<br/>202,194 SF",
+                'icon' => '/images/portfolio/95908_500x650.jpg',
+                'blog_image' => '/images/portfolio/95908_500x650.jpg',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/95908_500x650.jpg',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Industrial',),
+            ),
+            array(
+                'name' => 'The United Staffing Building',
+                'summary' => "Ventura, CA<br/>32,825 SF",
+                'icon' => '/images/portfolio/545-555-S-A-St-Oxnard-CA-Building-Photo-9-LargeHighDefinition.jpg',
+                'blog_image' => '/images/portfolio/545-555-S-A-St-Oxnard-CA-Building-Photo-9-LargeHighDefinition.jpg',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/545-555-S-A-St-Oxnard-CA-Building-Photo-9-LargeHighDefinition.jpg',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Industrial',),
+            ),
+            array(
+                'name' => 'Industrial Technologies Building, Phoenix',
+                'summary' => "Phoenix, AZ<br/>45,827 SF",
+                'icon' => '/images/portfolio/850-W-Lincoln-St-Phoenix-AZ-Primary-Photo-1-Large.jpg',
+                'blog_image' => '/images/portfolio/850-W-Lincoln-St-Phoenix-AZ-Primary-Photo-1-Large.jpg',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/850-W-Lincoln-St-Phoenix-AZ-Primary-Photo-1-Large.jpg',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Industrial',),
+            ),
+            array(
+                'name' => 'Industrial Technologies Building, Middle Village',
+                'summary' => "Queens, NY<br/>45,827 SF",
+                'icon' => '/images/portfolio/70-10-74th-St-Middle-Village-NY-Building-Photo-1-LargeHighDefinition.jpg',
+                'blog_image' => '/images/portfolio/70-10-74th-St-Middle-Village-NY-Building-Photo-1-LargeHighDefinition.jpg',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/70-10-74th-St-Middle-Village-NY-Building-Photo-1-LargeHighDefinition.jpg',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Industrial',),
+            ),
+            array(
+                'name' => 'Container City',
+                'summary' => "In Development",
+                'icon' => '/images/portfolio/Container_City.jpg',
+                'blog_image' => '/images/portfolio/Container_City.jpg',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/Container_City.jpg',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Development',),
+            ),
+            array(
+                'name' => 'Briarmont Estates',
+                'summary' => "In Development",
+                'icon' => '/images/portfolio/Briarmont_Estates.jpg',
+                'blog_image' => '/images/portfolio/Briarmont_Estates.jpg',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/Briarmont_Estates.jpg',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Development',),
+            ),
+            array(
+                'name' => 'Yuma Industrial Center',
+                'summary' => "Yuma, AZ<br/>124,500 SF",
+                'icon' => '/images/portfolio/2198-S-Pacific-Ave-Yuma-AZ-Primary-Photo-1-Large.jpg',
+                'blog_image' => '/images/portfolio/2198-S-Pacific-Ave-Yuma-AZ-Primary-Photo-1-Large.jpg',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/2198-S-Pacific-Ave-Yuma-AZ-Primary-Photo-1-Large.jpg',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Retail',
+                'types' => array('Industrial',),
+            ),
+            array(
+                'name' => 'Bakersfield Industrial Technologies Center',
+                'summary' => "61,118 SF",
+                'icon' => '/images/portfolio/Oildale-Industrial-Portfolio-Aerial-1-LargeHighDefinition.jpg',
+                'blog_image' => '/images/portfolio/Oildale-Industrial-Portfolio-Aerial-1-LargeHighDefinition.jpg',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/Oildale-Industrial-Portfolio-Aerial-1-LargeHighDefinition.jpg',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Industrial',
+                'types' => array('Industrial',),
+            ),
+            array(
+                'name' => 'Ontario Auto Row',
+                'summary' => "Hold Length: 60 months<br/>Exit Multiple: 7-cap",
+                'icon' => '/images/portfolio/Ontario_Auto_Row.png',
+                'blog_image' => '/images/portfolio/Ontario_Auto_Row.png',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/Ontario_Auto_Row.png',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Industrial',
+                'types' => array('Industrial',),
+            ),
     );
 
     function get_company_info($company = 'all', $element = 'all') {

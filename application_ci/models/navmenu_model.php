@@ -19,8 +19,9 @@ class Navmenu_Model extends CI_Model
 				 * Companies now redirects to Portfolio
 				*/
 				array(	"/portfolio"				=> "Portfolio",
-					"#Active"				=> "Companies",
-					"#Projects"				=> "Projects",
+					"#Retail"				=> "Holdings",
+					"#Industrial"				=> "Past Projects",
+					"#Development"				=> "Opportunities",
 				),
 				array(	"/about"				=> "About Us",
 					"/about/executive-team"			=> "Leadership",

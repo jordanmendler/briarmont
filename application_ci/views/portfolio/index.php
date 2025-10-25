@@ -43,14 +43,16 @@
         <div id="portfolio">
           <ul id="filtering-nav">
             <li class="active"><a class="all" href="#all">All</a></li>
-	<?php /*	// Get and display list of types
-	for($i = 0; $i < count($types) ; $i++) {	
-           echo"<li><a class=\"$types[$i]\" href=\"#$types[$i]\">Our $types[$i]</a></li>";
-	}*/
-	?>
-	<li><a class="Active" href="Active">Active Companies</a></li>
-	<li><a class="Development" href="Development">Coming Soon</a></li>
-	<li><a class="Projects" href="Projects">Select Partnerships</a></li>
+            <?php /*	// Get and display list of types
+            for($i = 0; $i < count($types) ; $i++) {	
+                echo"<li><a class=\"$types[$i]\" href=\"#$types[$i]\">Our $types[$i]</a></li>";
+            }*/
+            ?>
+            <li><a class="Industrial" href="Industrial">Industrial</a></li>
+            <li><a class="Self-Storage" href="Self-Storage">Self-Storage</a></li>
+            <li><a class="Retail" href="Retail">Retail</a></li>
+            <li><a class="Multifamily" href="Multifamily">Multifamily</a></li>
+            <li><a class="Development" href="Development">Development</a></li>
           </ul>
           <div class="divider"></div>
           <div class="clear"></div>
