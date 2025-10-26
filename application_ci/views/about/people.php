@@ -1,14 +1,14 @@
 <h2><?= $title ?></h2>
 <div class="nav-links">
 <?php
-	foreach ($people as $person)
+	/* foreach ($people as $person)
 	{
 		echo '<li><a href="#';
 		echo str_replace(' ', '-', str_replace('"', '', $person['name']));
 		echo '">';
 		echo $person['name'] . ', <span class="people-title">' . $person['title'];
 		echo '</span></a></li>';
-	}
+	} */
 ?>
 </div>
 	

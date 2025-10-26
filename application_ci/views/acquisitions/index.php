@@ -1,7 +1,5 @@
 <div class="contact">
-    <h2>Contact Us</h2>
-    <div class="clear" style="margin-bottom:20px"></div>
-
+    <h2>Acquisitions</h2>
     <p>Briarmont primarily acquires value-add and opportunistic deals. We like to see a clear path to profitability within 2-3 years and to significantly beat the market over a 5-10 year hold period.</p>
     <br/>
     <p>Our preferred asset classes include industrial, retail and medical; but we also like self-storage, and automotive.</p>

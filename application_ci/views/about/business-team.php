@@ -12,7 +12,7 @@
 	});
 </script>
 
-	<h2>Team</h2>
+	<h2>Our Team</h2>
 	<p>Briarmont utilitizes AI to identify undervalued commercial real estate. By analyzing proprietary and public historical and real-time property, economic, and demographic data, we leverage Machine Learning strategies to target assets with strong potential.</p>
 	</br>
 	<!-- photo collage -->
@@ -45,13 +45,37 @@
 		<!-- <div class="item" style="float:left; margin-right:2px; margin-top:2px">
 			<a class="fancybox" href="/images/about/business-team/interns-working2.jpg" rel="gallery"><img style="width:336px; height:200px"  src="/images/innovation-center/interns-working2.jpg" /></a>	
 		</div> -->
-        <ul class="custom-bullet-list">
-            <li>Data Driven Freehold Realty</li>
-            <li>Value Add Acquisitions</li>
-            <li>Utilizing Technology to Optimize Leasing</li>
-            <li>Land Consolidation & Space Reclamation</li>
-            <li>Strategic Conversions & Redevelopment</li>
-            <li>SHDH (Super Higher Density Housing)</li>
-        </ul>
+        <div class="team-listing">
+            <div class="team-row">
+                <div class="team-item">
+                    <div class="image-circle" style="background-image: url('/images/service1.png');"></div>
+                    <div class="item-text">Data Driven Freehold Realty</div>
+                </div>
+                <div class="team-item">
+                    <div class="image-circle" style="background-image: url('/images/service4.png');"></div>
+                    <div class="item-text">Value Add Acquisitions</div>
+                </div>
+            </div>
+            <div class="team-row">
+                <div class="team-item">
+                    <div class="image-circle" style="background-image: url('/images/service2.png');"></div>
+                    <div class="item-text">Utilizing Technology to Optimize Leasing</div>
+                </div>
+                <div class="team-item">
+                    <div class="image-circle" style="background-image: url('/images/service5.png');"></div>
+                    <div class="item-text">Land Consolidation & Space Reclamation</div>
+                </div>
+            </div>
+            <div class="team-row">
+                <div class="team-item">
+                    <div class="image-circle" style="background-image: url('/images/service3.png');"></div>
+                    <div class="item-text">Strategic Conversions & Redevelopment</div>
+                </div>
+                <div class="team-item">
+                    <div class="image-circle" style="background-image: url('/images/service6.png');"></div>
+                    <div class="item-text">SHDH (Super Higher Density Housing)</div>
+                </div>
+            </div>
+        </div>
 	</div>
 </div>

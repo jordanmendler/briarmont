@@ -72,7 +72,7 @@ class Divisions_Model extends CI_Model {
 	 */
 
 
-	array(
+	/* array(
 	    'name' => 'Veloz Ventures',
 	    'display' => true,
 	    'summary' => 'Briarmont Estates & Mansion manages a small portfolio of wholly-owned and operated ventures, with a focus on applying advanced technology skills and creative, outside-the-box thinking to underserved markets.',
@@ -240,7 +240,62 @@ Equipped for small scale product assembly and R&D, Veloz Industries also houses 
 	    'color' => '#3BB9FF',
 	    'icon' => '/images/divisions/logos/veloz-foundation.png',
 	    'header' => '/images/divisions/headers/veloz-foundation.png',
-	),
+	), */
+        
+        array(
+            'name' => 'Realty',
+            'display' => true,
+            'summary' => 'Briarmont is a full service real estate investment firm',
+            'link' => '/',
+            'color' => '#972a08',
+            'icon' => '/images/divisions/empty_image.png',
+            'header' => '',
+        ),
+        array(
+            'name' => 'Industrial Center',
+            'display' => true,
+            'summary' => 'Briarmont owns and operates value-add industrial real estate',
+            'link' => '/',
+            'color' => '#3BB9FF',
+            'icon' => '/images/divisions/empty_image.png',
+            'header' => '',
+        ),
+        array(
+            'name' => 'Central Storage',
+            'display' => true,
+            'summary' => 'Briarmont owns Self-Storage facilities which operate using best-in-class automation',
+            'link' => '/',
+            'color' => '#f0b310',
+            'icon' => '/images/divisions/empty_image.png',
+            'header' => '',
+        ),
+        array(
+            'name' => 'Estates',
+            'display' => true,
+            'summary' => 'Build-to-rent multilfamily residential communities using modular construction',
+            'link' => '/',
+            'color' => '#6450bc',
+            'icon' => '/images/divisions/empty_image.png',
+            'header' => '',
+        ),
+        array(
+            'name' => 'Mansion',
+            'display' => true,
+            'summary' => 'Luxurious single family homes operating as long-term residential and AirBNB rentals',
+            'link' => '/',
+            'color' => '#5dcf06',
+            'icon' => '/images/divisions/empty_image.png',
+            'header' => '',
+        ),
+        array(
+            'name' => 'Container City',
+            'display' => true,
+            'summary' => 'Multi-generational, mixed-use project developed from shipping containers',
+            'link' => '/',
+            'color' => '#9aa3a8',
+            'icon' => '/images/divisions/empty_image.png',
+            'header' => '',
+        ),
     );
     var $extras = array(
     );

@@ -38,7 +38,7 @@
   </div>
   <!-- End Menu -->
  <!-- <p>The Veloz Group wholly owns and operates three technology businesses: Beverly Hills Chairs, Custom Tobacco and Veloz Solutions. We are actively developing a fourth business -- RepRoll. The Veloz Group regularly explores new opportunities, both internally and as joint ventures.</p> -->
- <p>We build, operate and own technology-driven businesses. Learn more about our portfolio companies and select projects below.</p>
+ <p>Briarmont develops, owns, and operates real estate. Learn more about our projects below.</p>
   	<!-- Begin Portfolio -->
         <div id="portfolio">
           <ul id="filtering-nav">

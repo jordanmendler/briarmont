@@ -33,7 +33,9 @@
 			<div class="rounded"></div>	
 
 			<a class="image">
-				<span class="rollover"></span><img src="<?= $data['icon'] ?>" alt="<?= $data['name'] ?>"/>
+				<span class="rollover"></span>
+                <img src="<?= $data['icon'] ?>" alt="<?= $data['name'] ?>"/>
+                <div class="text-in-rounded"><?=$data['name']?></div>
 			</a>
 		</div>
 		<div class="plus"></div>

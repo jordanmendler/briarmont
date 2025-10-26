@@ -25,7 +25,7 @@ class Navmenu_Model extends CI_Model
 				),
 				array(	"/about"				=> "About Us",
 					"/about/executive-team"			=> "Leadership",
-					"/about/business-team"			=> "Team",
+					"/about/business-team"			=> "Our Team",
 					//"/about/engineering-team"		=> "Engineering",
 					//"/about/team-of-innovators"		=> "Team of Innovators",
 					//"/about/innovation-center"		=> "Innovation Center",

@@ -1,6 +1,6 @@
 		</div>
 		<div id="footer">
-			<div class="left">&copy; Copyright 2011-<?= date('Y') ?>. <a href="/">Briarmont Estates & Mansion</a>. All Rights Reserved</div>
+			<div class="left">&copy; Copyright 2011-<?= date('Y') ?>. <a href="/">Briarmont</a>. All Rights Reserved</div>
 			
 			<div class="clear"></div>
 		</div>

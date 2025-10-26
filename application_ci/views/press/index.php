@@ -9,7 +9,7 @@
 
 <h2>Press</h2>
 
-<p>Our companies and executives have been featured across a wide range of media outlets. We encourage members of the media interested in covering or connecting with Briarmont Estates & Mansion or one of our portfolio companies to email us at <a href="mailto:press@briarmont.com">press@briarmont.com</a>.</p>
+<p>Our projects and executives have been featured across a wide range of media outlets. We encourage members of the media interested in covering or connecting with Briarmont or one of our projects to email us at <a href="mailto:press@briarmont.com">press@briarmont.com</a>.</p>
 <div class="publications" style>
     <img src="/images/press/new/Forbes.png" alt="Forbes"/>
     <img src="/images/press/new/US-News-logo.png" alt="US News"/>
