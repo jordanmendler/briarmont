@@ -2,15 +2,12 @@
 
 <div class="contact">
 	<h2>Contact Us</h2>
-
-	<img src="/images/contact/veloz.jpg" />
-
-        <div class="clear" style="margin-bottom:20px"></div>
+    <div class="clear" style="margin-bottom:20px"></div>
 
 	<div class="one_half">
 		<h5>Corporate Office</h5>
 		<p style="font-size:120%">
-			Briarmont Estates & Mansion<br/>
+			Briarmont<br/>
 			601 Meridian Ave<br/>
 			South Pasadena, CA 91030
 		</p>

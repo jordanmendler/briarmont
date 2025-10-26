@@ -48,7 +48,7 @@
 	</div>
 </div>
 
-<div class="line"></div>
+<!-- <div class="line"></div>
 <div class="one_half">
 	<h5><span class="red"><?= $content['col1-head'] ?></span></h5>
 	<?= $content['col1-body']?>
@@ -59,3 +59,4 @@
 	<h5><span class="red"><?= $content['col2-head'] ?></span></h5>
 	<?= $content['col2-body']?>
 </div>
+ -->

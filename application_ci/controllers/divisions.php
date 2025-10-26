@@ -10,13 +10,15 @@ class Divisions extends MY_Controller
 
 	function index()
 	{
-		$this->data['title'] = 'Divisions';
+        $this->load->helper('url');
+        redirect('/', 'location', 301);
+		/* $this->data['title'] = 'Divisions';
 		$this->data['header'] = '/images/divisions/headers/veloz.png';
 		$this->data['divisions'] = $this->divisions_model->get_active_divisions();
 
 		$this->load_header();
 		$this->load_view('home/round_icons');
-		$this->load_footer();
+		$this->load_footer(); */
 	}
 
 	function veloz_global()

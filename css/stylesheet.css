@@ -1739,3 +1739,26 @@ img.high-index{//z-index: 200;position: relative;}
 .collage-press img{width:213px;float:left;}
 .collage-press{height:1003px;padding-top: 80px;}
 .collage-press .item{box-shadow: -2px 2px 8px #ccc;}
+
+.custom-bullet-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-bullet-list li {
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 12px;
+}
+
+.custom-bullet-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle, white 25%, orange 25.1%);
+}

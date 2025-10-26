@@ -163,7 +163,7 @@ $(window).load(preload([
 <div id="wrapper">
 	<div id="inside">
 	<div id="navmenu">
-	<div id="social-icons">
+	<div id="social-icons" style="visibility:hidden;">
 		<a href="https://briarmont.com" target="_blank"><img src="/images/social-media/icon-facebook.png" alt="Briarmont Estates & Mansion"/></a>
 		<a href="https://briarmont.com" target="_blank"><img src="/images/social-media/icon-twitter.png" alt="Briarmont Estates & Mansion"/></a>
 		<a href="https://briarmont.com" target="_blank"><img src="/images/social-media/icon-linkedin.png" alt="Briarmont Estates & Mansion"/></a>
@@ -274,7 +274,7 @@ $(window).load(preload([
 
 <div id="main">
 	<div id="header">
-		<div class="mainlogo"><a href="/divisions"><img src="<?= $header ?>" alt="Briarmont Estates & Mansion"/
+		<div class="mainlogo"><a href="/"><img src="<?= $header ?>" alt="Briarmont Estates & Mansion"/
 				onmouseover='$(this).stop().animate({"opacity": ".4"}, "100");'
 				onmouseout='$(this).stop().animate({"opacity": "1"}, "50");'
 		></a></div>

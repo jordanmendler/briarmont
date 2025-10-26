@@ -13,11 +13,11 @@
 </script>
 
 	<h2>Team</h2>
-	<p>Since our founding, we have placed a premium on recruiting outstanding individuals across all levels of our organization -- from leaders of our portfolio companies to employees to advisers to interns. Our unique and defining culture is a reflection of our team.</p>
+	<p>Briarmont utilitizes AI to identify undervalued commercial real estate. By analyzing proprietary and public historical and real-time property, economic, and demographic data, we leverage Machine Learning strategies to target assets with strong potential.</p>
 	</br>
 	<!-- photo collage -->
 	<div id="container">
-		<div class="item" style="margin-right:2px">
+		<!-- <div class="item" style="margin-right:2px">
 			<a class="fancybox" href="/images/about/business-team/bo1.jpg" rel="gallery"><img style="width:180px; height:274px"  src="/images/about/business-team/bo1.jpg" /></a>	
 		</div>
 		<div class="item" style="margin-left:2px">
@@ -41,10 +41,17 @@
 			
 		<div class="item" style="float:right; margin-left:2px; margin-top:4px">
 			<a class="fancybox" href="/images/about/business-team/paper.png" rel="gallery"><img style="width:300px"  src="/images/about/business-team/paper.png" /></a>
-		</div>
+		</div> -->
 		<!-- <div class="item" style="float:left; margin-right:2px; margin-top:2px">
 			<a class="fancybox" href="/images/about/business-team/interns-working2.jpg" rel="gallery"><img style="width:336px; height:200px"  src="/images/innovation-center/interns-working2.jpg" /></a>	
 		</div> -->
-
+        <ul class="custom-bullet-list">
+            <li>Data Driven Freehold Realty</li>
+            <li>Value Add Acquisitions</li>
+            <li>Utilizing Technology to Optimize Leasing</li>
+            <li>Land Consolidation & Space Reclamation</li>
+            <li>Strategic Conversions & Redevelopment</li>
+            <li>SHDH (Super Higher Density Housing)</li>
+        </ul>
 	</div>
 </div>

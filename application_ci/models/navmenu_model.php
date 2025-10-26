@@ -26,18 +26,18 @@ class Navmenu_Model extends CI_Model
 				array(	"/about"				=> "About Us",
 					"/about/executive-team"			=> "Leadership",
 					"/about/business-team"			=> "Team",
-					"/about/engineering-team"		=> "Engineering",
+					//"/about/engineering-team"		=> "Engineering",
 					//"/about/team-of-innovators"		=> "Team of Innovators",
 					//"/about/innovation-center"		=> "Innovation Center",
 					//"/about/distribution-center"		=> "Distribution Center",
 				),
 				array(	"/press"				=> "Press",
 				),
-				array(	"/social-media"				=> "Social Media",
+				//array(	"/social-media"				=> "Social Media",
 					//"/social-media#blog"			=> "Blog",
 					//"/social-media#videos"		=> "Videos",
 					//"/social-media#follow-us" 		=> "Follow Us",
-				),
+				//),
 /*
 				array(  "/jobs"					=> "Careers",
 					#"/jobs#leadership"			=> "Leadership",
@@ -56,6 +56,9 @@ class Navmenu_Model extends CI_Model
 				/*array(	"/foundation"				=> "Foundation",
 				),*/
 
+				array(
+                    "/acquisitions" => "Acquisitions",
+				),
 				array(	"/contact"				=> "Contact",
 				),
 		);

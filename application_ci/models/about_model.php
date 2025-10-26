@@ -110,7 +110,7 @@ class About_Model extends CI_Model
 	function get_content()
 	{
 		return array(
-			"intro"		=> "<p>Briarmont Estates & Mansion builds and operates technology-driven companies and applies advanced technology skills and creative, outside-the-box thinking to underserved markets. We own and operate e-commerce businesses Beverly Hills Chairs and Custom Tobacco and technology consulting firm Veloz Solutions; are actively incubating new technology ventures; and participate in strategic partnerships with both large and smaller entrepreneurial companies.</p>",
+			"intro"		=> "<p>Briarmont develops and operates value-add Real Estate projects. We combine expertise in AI, real estate, and entrepreneurship to strategically enhance property values, identifying opportunities overlooked by traditional firms.</p>",
 			"col1-head"	=> "Our Culture",
 			"col1-body"	=> "<p>Growing up on Veloz Avenue taught us the invaluable lessons that have shaped our unique corporate culture. Think outside the box. Always question the status quo. Great achievements are driven by innovation and creativity put into action through hard work and dedication. Success in business is a means, not an end. Family, friendship and community are life's indespensible pillars.</p>
 
