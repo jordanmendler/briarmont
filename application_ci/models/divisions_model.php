@@ -248,7 +248,7 @@ Equipped for small scale product assembly and R&D, Veloz Industries also houses 
             'summary' => 'Briarmont is a full service real estate investment firm',
             'link' => '/',
             'color' => '#972a08',
-            'icon' => '/images/divisions/empty_image.png',
+            'icon' => '/images/briarmont-logo-transparent.png',
             'header' => '',
         ),
         array(
@@ -257,7 +257,7 @@ Equipped for small scale product assembly and R&D, Veloz Industries also houses 
             'summary' => 'Briarmont owns and operates value-add industrial real estate',
             'link' => '/',
             'color' => '#3BB9FF',
-            'icon' => '/images/divisions/empty_image.png',
+            'icon' => '/images/briarmont-logo-transparent.png',
             'header' => '',
         ),
         array(
@@ -266,7 +266,7 @@ Equipped for small scale product assembly and R&D, Veloz Industries also houses 
             'summary' => 'Briarmont owns Self-Storage facilities which operate using best-in-class automation',
             'link' => '/',
             'color' => '#f0b310',
-            'icon' => '/images/divisions/empty_image.png',
+            'icon' => '/images/briarmont-logo-transparent.png',
             'header' => '',
         ),
         array(
@@ -275,7 +275,7 @@ Equipped for small scale product assembly and R&D, Veloz Industries also houses 
             'summary' => 'Build-to-rent multilfamily residential communities using modular construction',
             'link' => '/',
             'color' => '#6450bc',
-            'icon' => '/images/divisions/empty_image.png',
+            'icon' => '/images/briarmont-logo-transparent.png',
             'header' => '',
         ),
         array(
@@ -284,7 +284,7 @@ Equipped for small scale product assembly and R&D, Veloz Industries also houses 
             'summary' => 'Luxurious single family homes operating as long-term residential and AirBNB rentals',
             'link' => '/',
             'color' => '#5dcf06',
-            'icon' => '/images/divisions/empty_image.png',
+            'icon' => '/images/briarmont-logo-transparent.png',
             'header' => '',
         ),
         array(
@@ -293,7 +293,7 @@ Equipped for small scale product assembly and R&D, Veloz Industries also houses 
             'summary' => 'Multi-generational, mixed-use project developed from shipping containers',
             'link' => '/',
             'color' => '#9aa3a8',
-            'icon' => '/images/divisions/empty_image.png',
+            'icon' => '/images/briarmont-logo-transparent.png',
             'header' => '',
         ),
     );

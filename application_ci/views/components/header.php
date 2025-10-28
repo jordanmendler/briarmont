@@ -249,7 +249,7 @@ $(window).load(preload([
 								}
 
 								// Generate link and close li
-								if ($subnav == '#Active' || $subnav == '#Projects' || $subnav == '#Retail' || $subnav == '#Industrial' || $subnav == '#Development') {
+								if ($subnav == '#Active' || $subnav == '#Projects' || $subnav == '#Retail' || $subnav == '#Industrial' || $subnav == '#Development' || $subnav == '#Holdings' || $subnav == '#Past-Projects' || $subnav == '#Opportunities') {
 								    echo '<a class="project-filter" data-trigger="'. str_replace("#", '', $subnav) .'" href="' . $subnav . '">' . $nav[$subnav] . '</a></li>';
 								} else {
 								    echo '<a href="' . $subnav . '">' . $nav[$subnav] . '</a></li>';

@@ -7,7 +7,7 @@
 class Portfolio_Model extends CI_Model {
 
     var $divisions = array('Capital', 'Ventures', 'Industries', 'Innovations', 'Entertainment',);
-    var $types = array('Active', 'Development', 'Projects', 'Industrial', 'Self-Storage', 'Retail', 'Multifamily',);
+    var $types = array('Development', 'Projects', 'Industrial', 'Self-Storage', 'Retail', 'Multifamily', 'Holdings', 'Past-Projects', 'Opportunities');
     /*
       var $divisions =	array(	'Consumer Products', 'Electronics', 'Entertainment & Leisure', 'Technology', 'Automotive', 'Brokerage', 'Transportation', 'Retail & Wholesale', 'Apparel & Accessories', 'Food Beverages & Tobacco', 'Manufacturing', 'Services', 'Consulting', 'Financial Services', 'Legal', 'Service', 'Software');
      */
@@ -591,6 +591,40 @@ class Portfolio_Model extends CI_Model {
 	      'types'		=> array ( 'Projects', ),
 	      ), */
             array(
+                'name' => 'Fresno Industrial Center',
+                'summary' => "Fresno, CA<br/>125,958 SF",
+                'icon' => '/images/portfolio/Fresno_Industrial_Center.png',
+                'blog_image' => '/images/portfolio/Fresno_Industrial_Center.png',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/Fresno_Industrial_Center.png',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Industrial',
+                'types' => array('Industrial', 'Opportunities'),
+            ),
+            array(
+                'name' => 'Briarmont SBD',
+                'summary' => "San Bernardino, CA<br/>27,000SF",
+                'icon' => '/images/portfolio/Briarmont_SBD.png',
+                'blog_image' => '/images/portfolio/Briarmont_SBD.png',
+                'link' => '',
+                'launch' => '',
+                'tagline' => '',
+                'images' => array(
+                    '/images/portfolio/Briarmont_SBD.png',
+                ),
+                'divisions' => array(
+                
+                ),
+                'industries' => 'Industrial',
+                'types' => array('Industrial', 'Opportunities'),
+            ),
+            array(
                 'name' => 'Briarmont Estates, Sylmar',
                 'summary' => "20 homes on 2 acres",
                 'icon' => '/images/portfolio/Briarmont_Estates_Sylmar.jpg',
@@ -604,8 +638,8 @@ class Portfolio_Model extends CI_Model {
                 'divisions' => array(
                 
                 ),
-                'industries' => 'Retail',
-                'types' => array('Multifamily',),
+                'industries' => 'Multifamily',
+                'types' => array('Multifamily', 'Self-Storage', 'Opportunities'),
             ),
             array(
                 'name' => 'Briarmont Estates, Lake Palmdale',
@@ -621,8 +655,8 @@ class Portfolio_Model extends CI_Model {
                 'divisions' => array(
                 
                 ),
-                'industries' => 'Retail',
-                'types' => array('Multifamily',),
+                'industries' => 'Multifamily',
+                'types' => array('Multifamily', 'Self-Storage', 'Opportunities'),
             ),
             array(
                 'name' => 'Lancaster Auto Row',
@@ -639,7 +673,7 @@ class Portfolio_Model extends CI_Model {
                 
                 ),
                 'industries' => 'Retail',
-                'types' => array('Projects', 'Industrial'),
+                'types' => array('Retail', 'Self-Storage', 'Industrial', 'Holdings', 'Past-Projects'),
             ),
             array(
                 'name' => 'Palmdale Central Storage',
@@ -656,10 +690,10 @@ class Portfolio_Model extends CI_Model {
                 
                 ),
                 'industries' => 'Retail',
-                'types' => array('Industrial',),
+                'types' => array('Retail', 'Self-Storage'),
             ),
             array(
-                'name' => 'Industrial Technologies Building, Palmdale',
+                'name' => 'Industrial Center, Palmdale',
                 'summary' => "Palmdale, CA<br/>16,000 SF",
                 'icon' => '/images/portfolio/37631-6th-St-E-Palmdale-CA-Building-Photo-1-Large.jpg',
                 'blog_image' => '/images/portfolio/37631-6th-St-E-Palmdale-CA-Building-Photo-1-Large.jpg',
@@ -672,8 +706,8 @@ class Portfolio_Model extends CI_Model {
                 'divisions' => array(
                 
                 ),
-                'industries' => 'Retail',
-                'types' => array('Industrial',),
+                'industries' => 'Industrial',
+                'types' => array('Industrial', 'Past-Projects'),
             ),
             array(
                 'name' => 'The Shops at Pacific View',
@@ -690,7 +724,7 @@ class Portfolio_Model extends CI_Model {
                 
                 ),
                 'industries' => 'Retail',
-                'types' => array('Retail',),
+                'types' => array('Retail', 'Past-Projects'),
             ),
             array(
                 'name' => 'Pacific View Automotive',
@@ -706,25 +740,8 @@ class Portfolio_Model extends CI_Model {
                 'divisions' => array(
                 
                 ),
-                'industries' => 'Retail',
-                'types' => array('Retail', 'Industrial'),
-            ),
-            array(
-                'name' => 'Industrial Technologies Building, Denver',
-                'summary' => "Denver, CO<br/>62,114 SF",
-                'icon' => '/images/portfolio/3625-E-48th-Ave-Denver-CO-Primary-Photo-1-LargeHighDefinition.jpg',
-                'blog_image' => '/images/portfolio/3625-E-48th-Ave-Denver-CO-Primary-Photo-1-LargeHighDefinition.jpg',
-                'link' => '',
-                'launch' => '',
-                'tagline' => '',
-                'images' => array(
-                    '/images/portfolio/3625-E-48th-Ave-Denver-CO-Primary-Photo-1-LargeHighDefinition.jpg',
-                ),
-                'divisions' => array(
-                
-                ),
-                'industries' => 'Retail',
-                'types' => array('Industrial',),
+                'industries' => 'Industrial',
+                'types' => array('Industrial', 'Past-Projects'),
             ),
             array(
                 'name' => 'The Kauai Post',
@@ -741,7 +758,7 @@ class Portfolio_Model extends CI_Model {
                 
                 ),
                 'industries' => 'Retail',
-                'types' => array('Industrial', 'Retail'),
+                'types' => array('Retail', 'Past-Projects'),
             ),
             array(
                 'name' => 'Oxnard Auto Row',
@@ -757,11 +774,11 @@ class Portfolio_Model extends CI_Model {
                 'divisions' => array(
                 
                 ),
-                'industries' => 'Retail',
-                'types' => array('Industrial',),
+                'industries' => 'Industrial',
+                'types' => array('Industrial', 'Past-Projects'),
             ),
             array(
-                'name' => 'Industrial Technologies Building, Port of LA',
+                'name' => 'Industrial Center, Port of LA',
                 'summary' => "San Pedro, CA<br/>25,710 SF",
                 'icon' => '/images/portfolio/1002-S-Gaffey-St-San-Pedro-CA-Gaffey-Side-1-LargeHighDefinition.jpg',
                 'blog_image' => '/images/portfolio/1002-S-Gaffey-St-San-Pedro-CA-Gaffey-Side-1-LargeHighDefinition.jpg',
@@ -774,42 +791,8 @@ class Portfolio_Model extends CI_Model {
                 'divisions' => array(
                 
                 ),
-                'industries' => 'Retail',
-                'types' => array('Industrial', 'Retail'),
-            ),
-            array(
-                'name' => 'Briarmont Executive Suites, Downtown San Bernadino',
-                'summary' => "San Bernardino, CA<br/>23,235 SF",
-                'icon' => '/images/portfolio/1380-E-Highland-Ave-San-Bernardino-CA-Building-Photo-1-LargeHighDefinition.jpg',
-                'blog_image' => '/images/portfolio/1380-E-Highland-Ave-San-Bernardino-CA-Building-Photo-1-LargeHighDefinition.jpg',
-                'link' => '',
-                'launch' => '',
-                'tagline' => '',
-                'images' => array(
-                    '/images/portfolio/1380-E-Highland-Ave-San-Bernardino-CA-Building-Photo-1-LargeHighDefinition.jpg',
-                ),
-                'divisions' => array(
-                
-                ),
-                'industries' => 'Retail',
-                'types' => array('Development',),
-            ),
-            array(
-                'name' => 'Briarmont Executive Suites, Bakersfield',
-                'summary' => "Bakersfield, CA<br/>557,687 SF",
-                'icon' => '/images/portfolio/900-Old-River-Rd-Bakersfield-CA-DJI_0578-1-LargeHighDefinition.jpg',
-                'blog_image' => '/images/portfolio/900-Old-River-Rd-Bakersfield-CA-DJI_0578-1-LargeHighDefinition.jpg',
-                'link' => '',
-                'launch' => '',
-                'tagline' => '',
-                'images' => array(
-                    '/images/portfolio/900-Old-River-Rd-Bakersfield-CA-DJI_0578-1-LargeHighDefinition.jpg',
-                ),
-                'divisions' => array(
-                
-                ),
-                'industries' => 'Retail',
-                'types' => array('Development',),
+                'industries' => 'Industrial',
+                'types' => array('Industrial', 'Past-Projects'),
             ),
             array(
                 'name' => 'Stott Building',
@@ -826,7 +809,7 @@ class Portfolio_Model extends CI_Model {
                 
                 ),
                 'industries' => 'Retail',
-                'types' => array('Industrial',),
+                'types' => array('Retail', 'Past-Projects'),
             ),
             array(
                 'name' => 'The United Staffing Building',
@@ -843,27 +826,10 @@ class Portfolio_Model extends CI_Model {
                 
                 ),
                 'industries' => 'Retail',
-                'types' => array('Industrial',),
+                'types' => array('Retail', 'Past-Projects'),
             ),
             array(
-                'name' => 'Industrial Technologies Building, Phoenix',
-                'summary' => "Phoenix, AZ<br/>45,827 SF",
-                'icon' => '/images/portfolio/850-W-Lincoln-St-Phoenix-AZ-Primary-Photo-1-Large.jpg',
-                'blog_image' => '/images/portfolio/850-W-Lincoln-St-Phoenix-AZ-Primary-Photo-1-Large.jpg',
-                'link' => '',
-                'launch' => '',
-                'tagline' => '',
-                'images' => array(
-                    '/images/portfolio/850-W-Lincoln-St-Phoenix-AZ-Primary-Photo-1-Large.jpg',
-                ),
-                'divisions' => array(
-                
-                ),
-                'industries' => 'Retail',
-                'types' => array('Industrial',),
-            ),
-            array(
-                'name' => 'Industrial Technologies Building, Middle Village',
+                'name' => 'Industrial Center, Middle Village',
                 'summary' => "Queens, NY<br/>45,827 SF",
                 'icon' => '/images/portfolio/70-10-74th-St-Middle-Village-NY-Building-Photo-1-LargeHighDefinition.jpg',
                 'blog_image' => '/images/portfolio/70-10-74th-St-Middle-Village-NY-Building-Photo-1-LargeHighDefinition.jpg',
@@ -877,7 +843,7 @@ class Portfolio_Model extends CI_Model {
                 
                 ),
                 'industries' => 'Retail',
-                'types' => array('Industrial',),
+                'types' => array('Industrial', 'Retail', 'Past-Projects'),
             ),
             array(
                 'name' => 'Container City',
@@ -894,24 +860,7 @@ class Portfolio_Model extends CI_Model {
                 
                 ),
                 'industries' => 'Retail',
-                'types' => array('Development',),
-            ),
-            array(
-                'name' => 'Briarmont Estates',
-                'summary' => "In Development",
-                'icon' => '/images/portfolio/Briarmont_Estates.jpg',
-                'blog_image' => '/images/portfolio/Briarmont_Estates.jpg',
-                'link' => '',
-                'launch' => '',
-                'tagline' => '',
-                'images' => array(
-                    '/images/portfolio/Briarmont_Estates.jpg',
-                ),
-                'divisions' => array(
-                
-                ),
-                'industries' => 'Retail',
-                'types' => array('Development',),
+                'types' => array('Development', 'Projects', 'Industrial', 'Self-Storage', 'Retail', 'Multifamily', 'Past-Projects'),
             ),
             array(
                 'name' => 'Yuma Industrial Center',
@@ -928,7 +877,7 @@ class Portfolio_Model extends CI_Model {
                 
                 ),
                 'industries' => 'Retail',
-                'types' => array('Industrial',),
+                'types' => array('Industrial', 'Past-Projects'),
             ),
             array(
                 'name' => 'Bakersfield Industrial Technologies Center',
@@ -945,7 +894,7 @@ class Portfolio_Model extends CI_Model {
                 
                 ),
                 'industries' => 'Industrial',
-                'types' => array('Industrial',),
+                'types' => array('Industrial', 'Past-Projects'),
             ),
             array(
                 'name' => 'Ontario Auto Row',
@@ -962,7 +911,7 @@ class Portfolio_Model extends CI_Model {
                 
                 ),
                 'industries' => 'Industrial',
-                'types' => array('Industrial',),
+                'types' => array('Industrial', 'Past-Projects'),
             ),
     );
 
