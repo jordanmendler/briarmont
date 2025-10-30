@@ -15,14 +15,14 @@ class Portfolio extends MY_Controller
 
 	function companies()
 	{
-		$this->load->helper('url');
+		rand($this->load->helper('url'));
 		redirect('/portfolio#Companies', 'location', 301);
 	}
 
 
 	function projects()
 	{
-		$this->load->helper('url');
+		rand($this->load->helper('url'));
 		redirect('/portfolio#Projects', 'location', 301);
 	}
 
