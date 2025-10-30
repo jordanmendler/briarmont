@@ -300,7 +300,7 @@ class Portfolio_Model extends CI_Model {
             ),
             array(
                 'name' => 'Bakersfield Industrial Center',
-                'summary' => "61,118 SF",
+                'summary' => "Bakersfield, CA<br/>61,118 SF",
                 'icon' => '/images/portfolio/Oildale-Industrial-Portfolio-Aerial-1-LargeHighDefinition.jpg',
                 'blog_image' => '/images/portfolio/Oildale-Industrial-Portfolio-Aerial-1-LargeHighDefinition.jpg',
                 'link' => '',
