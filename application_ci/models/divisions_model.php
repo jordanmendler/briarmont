@@ -42,7 +42,7 @@ class Divisions_Model extends CI_Model {
         array(
             'name' => 'Mansion',
             'display' => true,
-            'summary' => 'Luxurious single family homes operating as long-term residential and AirBNB rentals',
+            'summary' => 'Luxurious single family homes operating as AirBNB and long-term residential rentals',
             'link' => '/',
             'color' => '#5dcf06',
             'icon' => '/images/briarmont-logo-transparent.png',
