@@ -112,7 +112,7 @@ class Portfolio_Model extends CI_Model {
                 'types' => array('Retail', 'Self-Storage', 'Past-Projects'),
             ),
             array(
-                'name' => 'Industrial Center, Palmdale',
+                'name' => 'Palmdale Industrial Center',
                 'summary' => "Palmdale, CA<br/>16,000 SF",
                 'icon' => '/images/portfolio/37631-6th-St-E-Palmdale-CA-Building-Photo-1-Large.jpg',
                 'blog_image' => '/images/portfolio/37631-6th-St-E-Palmdale-CA-Building-Photo-1-Large.jpg',
@@ -197,7 +197,7 @@ class Portfolio_Model extends CI_Model {
                 'types' => array('Industrial', 'Past-Projects'),
             ),
             array(
-                'name' => 'Industrial Center, Port of LA',
+                'name' => 'Port of LA Industrial Center',
                 'summary' => "San Pedro, CA<br/>25,710 SF",
                 'icon' => '/images/portfolio/1002-S-Gaffey-St-San-Pedro-CA-Gaffey-Side-1-LargeHighDefinition.jpg',
                 'blog_image' => '/images/portfolio/1002-S-Gaffey-St-San-Pedro-CA-Gaffey-Side-1-LargeHighDefinition.jpg',
@@ -300,7 +300,7 @@ class Portfolio_Model extends CI_Model {
             ),
             array(
                 'name' => 'Bakersfield Industrial Center',
-                'summary' => "61,118 SF",
+                'summary' => "Bakersfield, CA<br/>61,118 SF",
                 'icon' => '/images/portfolio/Oildale-Industrial-Portfolio-Aerial-1-LargeHighDefinition.jpg',
                 'blog_image' => '/images/portfolio/Oildale-Industrial-Portfolio-Aerial-1-LargeHighDefinition.jpg',
                 'link' => '',
