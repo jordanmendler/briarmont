@@ -197,7 +197,7 @@ class Portfolio_Model extends CI_Model {
                 'types' => array('Industrial', 'Past-Projects'),
             ),
             array(
-                'name' => 'Port of LA Industrial Center',
+                'name' => 'Industrial Center',
                 'summary' => "San Pedro, CA<br/>25,710 SF",
                 'icon' => '/images/portfolio/1002-S-Gaffey-St-San-Pedro-CA-Gaffey-Side-1-LargeHighDefinition.jpg',
                 'blog_image' => '/images/portfolio/1002-S-Gaffey-St-San-Pedro-CA-Gaffey-Side-1-LargeHighDefinition.jpg',
@@ -300,7 +300,7 @@ class Portfolio_Model extends CI_Model {
             ),
             array(
                 'name' => 'Bakersfield Industrial Center',
-                'summary' => "Bakersfield, CA<br/>61,118 SF",
+                'summary' => "61,118 SF",
                 'icon' => '/images/portfolio/Oildale-Industrial-Portfolio-Aerial-1-LargeHighDefinition.jpg',
                 'blog_image' => '/images/portfolio/Oildale-Industrial-Portfolio-Aerial-1-LargeHighDefinition.jpg',
                 'link' => '',
