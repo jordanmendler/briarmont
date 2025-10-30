@@ -33,7 +33,7 @@ class Divisions_Model extends CI_Model {
         array(
             'name' => 'Estates',
             'display' => true,
-            'summary' => 'Build-to-rent multilfamily residential communities using modular construction',
+            'summary' => 'Build-to-rent multifamily residential communities using modular construction',
             'link' => '/',
             'color' => '#6450bc',
             'icon' => '/images/briarmont-logo-transparent.png',
@@ -51,7 +51,7 @@ class Divisions_Model extends CI_Model {
         array(
             'name' => 'Container City',
             'display' => true,
-            'summary' => 'Multi-generational, mixed-use project developed from shipping containers',
+            'summary' => 'Multi-generational, mixed-use project developed from upcycled shipping containers',
             'link' => '/',
             'color' => '#9aa3a8',
             'icon' => '/images/briarmont-logo-transparent.png',
