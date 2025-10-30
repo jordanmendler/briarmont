@@ -197,7 +197,7 @@ thead{font-weight:bold;}
 .pf_gallery_3 img{margin-bottom:8px;}
 
 /* ===== rollover image style ===== */
-.pic_hover a .rollover{background:url(../images/site/icon-hover-1.png) no-repeat center #425968; display:block; position:absolute; z-index:10; display:none; cursor:pointer;}
+.pic_hover a .rollover{padding-top: 70px; background:url(../images/site/icon-hover-1.png) no-repeat center #425968; display:block; position:absolute; z-index:10; display:none; cursor:pointer;}
 .pic_hover a .rollover .text{padding:40px; color:#FFF;}
 .cool_pf img{width:620px; height:465px;}
 .cool_pf .pic_hover a .rollover{width:620px; height:465px; margin:10px 0 0 10px; background-color:#425968;}
@@ -1767,8 +1767,6 @@ img.high-index{//z-index: 200;position: relative;}
 }
 
 .text-in-rounded {
-    width: 100%;*/
-    padding-top: 70px;
     text-align: center;
     font-size: 18px;
 }
