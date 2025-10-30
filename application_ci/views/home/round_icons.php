@@ -34,7 +34,8 @@
 
 			<a class="image">
 				<span class="rollover"></span>
-                <img src="<?= $data['icon'] ?>" alt="<?= $data['name'] ?>"/>
+                <!-- img src="<?= $data['icon'] ?>" alt="<?= $data['name'] ?>"/-->
+                <div class="text-in-rounded">Briarmont</div>
                 <div class="text-in-rounded"><?=$data['name']?></div>
 			</a>
 		</div>
