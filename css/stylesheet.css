@@ -1767,10 +1767,11 @@ img.high-index{//z-index: 200;position: relative;}
 }
 
 .text-in-rounded {
-    /* position: absolute;
+    position: absolute;
     top: 48%;
-    width: 100%; */
+    width: 100%;
     text-align: center;
+    font-size: 18px;
 }
 
 .image-circle {
