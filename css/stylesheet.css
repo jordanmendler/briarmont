@@ -197,14 +197,13 @@ thead{font-weight:bold;}
 .pf_gallery_3 img{margin-bottom:8px;}
 
 /* ===== rollover image style ===== */
-.pic_hover a .rollover span{padding-top: 70px}
 .pic_hover a .rollover{background:url(../images/site/icon-hover-1.png) no-repeat center #425968; display:block; position:absolute; z-index:10; display:none; cursor:pointer;}
 .pic_hover a .rollover .text{padding:40px; color:#FFF;}
 .cool_pf img{width:620px; height:465px;}
 .cool_pf .pic_hover a .rollover{width:620px; height:465px; margin:10px 0 0 10px; background-color:#425968;}
 .pf_gallery img{width:186px; height:186px;}
 .pf_gallery .pic_hover {margin-left:27px;}
-.pf_gallery .pic_hover a .rollover{width:186px; height:186px; background:url(../images/site/icon-hover-1.png) center no-repeat;}
+.pf_gallery .pic_hover a .rollover{padding-top:70px; width:186px; height:186px; background:url(../images/site/icon-hover-1.png) center no-repeat;}
 .pf_gallery_3 img{width:206px; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px;}
 .pf_gallery_3 .pic_hover a .rollover{width:206px; height:206px; background:url(../images/site/icon-hover-1.png) center no-repeat;}
 .pf_gallery_3{line-height:1.2em;} 
