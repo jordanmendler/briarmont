@@ -24,7 +24,7 @@ class Divisions_Model extends CI_Model {
         array(
             'name' => 'Central Storage',
             'display' => true,
-            'summary' => 'Briarmont owns Self-Storage facilities which operate using best-in-class automation',
+            'summary' => 'Self-Storage facilities which operate using best-in-class automation',
             'link' => '/',
             'color' => '#f0b310',
             'icon' => '/images/briarmont-logo-transparent.png',
