@@ -197,7 +197,7 @@ class Portfolio_Model extends CI_Model {
                 'types' => array('Industrial', 'Past-Projects'),
             ),
             array(
-                'name' => 'Industrial Center',
+                'name' => 'Port of LA Industrial Center',
                 'summary' => "San Pedro, CA<br/>25,710 SF",
                 'icon' => '/images/portfolio/1002-S-Gaffey-St-San-Pedro-CA-Gaffey-Side-1-LargeHighDefinition.jpg',
                 'blog_image' => '/images/portfolio/1002-S-Gaffey-St-San-Pedro-CA-Gaffey-Side-1-LargeHighDefinition.jpg',
