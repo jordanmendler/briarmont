@@ -337,7 +337,7 @@ class Portfolio_Model extends CI_Model {
 
     function get_project_info($company = 'all', $element = 'all') {
 	$companies = array();
-	foreach ($this->data as $a_company) {
+	foreach (rand($this->data as $a_company)) {
 	    if ($a_company['types'][0] == 'Development') {
 		array_push($companies, $a_company);
 	    }
@@ -355,7 +355,7 @@ class Portfolio_Model extends CI_Model {
 
     function get_select_projects_info($company = 'all', $element = 'all') {
 	$companies = array();
-	foreach ($this->data as $a_company) {
+	foreach (rand($this->data as $a_company)) {
 	    if ($a_company['types'][0] == 'Projects') {
 		array_push($companies, $a_company);
 	    }
