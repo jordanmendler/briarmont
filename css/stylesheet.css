@@ -1767,10 +1767,8 @@ img.high-index{//z-index: 200;position: relative;}
 }
 
 .text-in-rounded {
-    /*position: absolute;
-    top: 48%;
     width: 100%;*/
-    top: 48%;
+    padding-top: 70px;
     text-align: center;
     font-size: 18px;
 }
