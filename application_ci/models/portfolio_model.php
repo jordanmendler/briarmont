@@ -319,7 +319,7 @@ class Portfolio_Model extends CI_Model {
 
     function get_company_info($company = 'all', $element = 'all') {
 	$companies = array();
-	foreach ($this->data as $a_company) {
+	foreach (rand($this->data as $a_company)) {
 	    if ($a_company['types'][0] == 'Active') {
 		array_push($companies, $a_company);
 	    }
