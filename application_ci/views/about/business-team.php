@@ -49,31 +49,31 @@
             <div class="team-row">
                 <div class="team-item">
                     <div class="image-circle" style="background-image: url('/images/service1.png');"></div>
-                    <div class="item-text">Data Driven Freehold Realty</div>
+                    <div class="item-text">Advisors with more than $2.5 billion of assets</div>
                 </div>
                 <div class="team-item">
                     <div class="image-circle" style="background-image: url('/images/service4.png');"></div>
-                    <div class="item-text">Value Add Acquisitions</div>
+                    <div class="item-text">The largest industrial developer in an entire US state</div>
                 </div>
             </div>
             <div class="team-row">
                 <div class="team-item">
                     <div class="image-circle" style="background-image: url('/images/service2.png');"></div>
-                    <div class="item-text">Utilizing Technology to Optimize Leasing</div>
+                    <div class="item-text">Management leads with more than 5,000 residential units and 20M SF of commercial space</div>
                 </div>
                 <div class="team-item">
                     <div class="image-circle" style="background-image: url('/images/service5.png');"></div>
-                    <div class="item-text">Land Consolidation & Space Reclamation</div>
+                    <div class="item-text">Family offices, PE firms, and trusted advisors with more than $20B in real estate assets</div>
                 </div>
             </div>
             <div class="team-row">
                 <div class="team-item">
                     <div class="image-circle" style="background-image: url('/images/service3.png');"></div>
-                    <div class="item-text">Strategic Conversions & Redevelopment</div>
+                    <div class="item-text">Network of industry-leading architects, engineers, developers, efficiency consultants & fundraisers</div>
                 </div>
                 <div class="team-item">
                     <div class="image-circle" style="background-image: url('/images/service6.png');"></div>
-                    <div class="item-text">SHDH (Super Higher Density Housing)</div>
+                    <div class="item-text">Employees in 5 countries and 20 staff members</div>
                 </div>
             </div>
         </div>
