@@ -41,7 +41,7 @@ class Portfolio_Model extends CI_Model {
                 
                 ),
                 'industries' => 'Industrial',
-                'types' => array('Industrial', 'Opportunities', 'Self-Storage'),
+                'types' => array('Opportunities', 'Self-Storage'),
             ),
             array(
                 'name' => 'Briarmont Estates, Sylmar',
@@ -58,7 +58,7 @@ class Portfolio_Model extends CI_Model {
                 
                 ),
                 'industries' => 'Multifamily',
-                'types' => array('Multifamily', 'Self-Storage', 'Opportunities'),
+                'types' => array('Multifamily', 'Development', 'Self-Storage', 'Opportunities'),
             ),
             array(
                 'name' => 'Briarmont Estates, Lake Palmdale',
@@ -75,7 +75,7 @@ class Portfolio_Model extends CI_Model {
                 
                 ),
                 'industries' => 'Multifamily',
-                'types' => array('Multifamily', 'Self-Storage', 'Opportunities'),
+                'types' => array('Multifamily', 'Development', 'Self-Storage', 'Opportunities'),
             ),
             array(
                 'name' => 'Lancaster Auto Row',
@@ -180,23 +180,6 @@ class Portfolio_Model extends CI_Model {
                 'types' => array('Retail', 'Past-Projects'),
             ),
             array(
-                'name' => 'Oxnard Auto Row',
-                'summary' => "Oxnard, CA<br/>7,104 SF",
-                'icon' => '/images/portfolio/0c7487d33ca14cf3914993c5747b34c5_3000x2000_resize.jpg',
-                'blog_image' => '/images/portfolio/0c7487d33ca14cf3914993c5747b34c5_3000x2000_resize.jpg',
-                'link' => '',
-                'launch' => '',
-                'tagline' => '',
-                'images' => array(
-                    '/images/portfolio/0c7487d33ca14cf3914993c5747b34c5_3000x2000_resize.jpg',
-                ),
-                'divisions' => array(
-                
-                ),
-                'industries' => 'Industrial',
-                'types' => array('Industrial', 'Past-Projects'),
-            ),
-            array(
                 'name' => 'Port of LA Industrial Center',
                 'summary' => "San Pedro, CA<br/>25,710 SF",
                 'icon' => '/images/portfolio/1002-S-Gaffey-St-San-Pedro-CA-Gaffey-Side-1-LargeHighDefinition.jpg',
@@ -279,7 +262,7 @@ class Portfolio_Model extends CI_Model {
                 
                 ),
                 'industries' => 'Retail',
-                'types' => array('Development', 'Projects', 'Industrial', 'Self-Storage', 'Retail', 'Multifamily', 'Past-Projects'),
+                'types' => array('Development', 'Industrial', 'Projects', 'Opportunities', 'Self-Storage', 'Retail', 'Multifamily', 'Past-Projects'),
             ),
             array(
                 'name' => 'Yuma Industrial Center',
