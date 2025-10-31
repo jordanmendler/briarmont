@@ -1802,3 +1802,15 @@ img.high-index{//z-index: 200;position: relative;}
     padding-right: 30px;
     text-align: left;
 }
+
+@media only screen and (max-width: 768px) {
+
+    #squares .items,
+    #squares .boxes {
+        width: 380px;
+    }
+
+    #squares .col4 {
+        width: 340px !important;
+    }
+}
