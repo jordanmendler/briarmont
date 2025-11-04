@@ -355,15 +355,17 @@ class Portfolio_Model extends CI_Model {
     }
 
     function get_portfolio_info($company = 'all', $element = 'all') {
-	if ($company == 'all') {
-	    return $this->data;
-	} else {
-	    if ($element == 'all') {
-		return $this->data[$company];
-	    } else {
-		return $this->data[$company][$element];
-	    }
-	}
+        if ($company == 'all') {
+            $return_data = $this->data;
+            shuffle($return_data);
+            return $return_data;
+        } else {
+            if ($element == 'all') {
+                return $this->data[$company];
+            } else {
+                return $this->data[$company][$element];
+            }
+        }
     }
 
     function get_divisions_info() {
