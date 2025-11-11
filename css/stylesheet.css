@@ -1803,6 +1803,62 @@ img.high-index{//z-index: 200;position: relative;}
     text-align: left;
 }
 
+/* Modal Iframe Styles */
+html.modal-open,
+body.modal-open {
+    overflow: hidden;
+    position: relative;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    height: 90%;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content iframe {
+    flex-grow: 1;
+    border: none;
+    width: 100%;
+}
+/* Modal Iframe Styles end */
+
 @media only screen and (max-width: 768px) {
 
     #squares .items,

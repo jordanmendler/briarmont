@@ -25,6 +25,7 @@ class Portfolio_Model extends CI_Model {
                 ),
                 'industries' => 'Industrial',
                 'types' => array('Industrial', 'Opportunities'),
+                'embed_url' => 'https://docs.google.com/presentation/d/e/2PACX-1vQKz8wQqqegAYV4TzroFpYp6mZ3L4FcDX45ZWrjo6JoMXY-j9ltqYco8xd1KXqxepTpkQefFukvaemu/pubembed?start=false&loop=false&delayms=5000',
             ),
             array(
                 'name' => 'Briarmont SBD',
@@ -42,6 +43,7 @@ class Portfolio_Model extends CI_Model {
                 ),
                 'industries' => 'Industrial',
                 'types' => array('Opportunities', 'Self-Storage'),
+                'embed_url' => 'https://docs.google.com/presentation/d/e/2PACX-1vS_4SPHKmpOB4wbVd9B82QmtoYwBH0jHqW_YQUA6ON3ujyEEPH71t6r3-QXbb0F16MwYmmObMRngmhK/pubembed?start=false&loop=false&delayms=5000',
             ),
             array(
                 'name' => 'Briarmont Estates, Sylmar',
@@ -59,6 +61,7 @@ class Portfolio_Model extends CI_Model {
                 ),
                 'industries' => 'Multifamily',
                 'types' => array('Multifamily', 'Development', 'Self-Storage', 'Opportunities'),
+                'embed_url' => 'https://docs.google.com/presentation/d/e/2PACX-1vSBPSD0H6-XTqXFleIAJaIniWeIUrHbXe0nu1BUMWQsi7Wv8aPUKBBkWGWBTCUtakNjY0JtRRAZqcbH/pubembed?start=false&loop=false&delayms=5000',
             ),
             array(
                 'name' => 'Briarmont Estates, Lake Palmdale',
@@ -76,6 +79,7 @@ class Portfolio_Model extends CI_Model {
                 ),
                 'industries' => 'Multifamily',
                 'types' => array('Multifamily', 'Development', 'Self-Storage', 'Opportunities'),
+                'embed_url' => 'https://docs.google.com/presentation/d/e/2PACX-1vSpTSMeNwxhrXEesVCxONdYNQQpLsc-rzBETV67Sy0upQ381LXqtOBXzU437opz0oKGTCFFNFlop8Zf/pubembed?start=false&loop=false&delayms=5000',
             ),
             array(
                 'name' => 'Lancaster Auto Row',
@@ -93,6 +97,7 @@ class Portfolio_Model extends CI_Model {
                 ),
                 'industries' => 'Retail',
                 'types' => array('Retail', 'Self-Storage', 'Industrial', 'Holdings', 'Past-Projects'),
+                'embed_url' => '',
             ),
             array(
                 'name' => 'Palmdale Central Storage',
@@ -110,6 +115,7 @@ class Portfolio_Model extends CI_Model {
                 ),
                 'industries' => 'Retail',
                 'types' => array('Retail', 'Self-Storage', 'Past-Projects'),
+                'embed_url' => '',
             ),
             array(
                 'name' => 'Palmdale Industrial Center',
@@ -127,6 +133,7 @@ class Portfolio_Model extends CI_Model {
                 ),
                 'industries' => 'Industrial',
                 'types' => array('Industrial', 'Past-Projects'),
+                'embed_url' => '',
             ),
             array(
                 'name' => 'The Shops at Pacific View',
@@ -144,6 +151,7 @@ class Portfolio_Model extends CI_Model {
                 ),
                 'industries' => 'Retail',
                 'types' => array('Retail', 'Past-Projects'),
+                'embed_url' => '',
             ),
             array(
                 'name' => 'Pacific View Automotive',
@@ -161,6 +169,7 @@ class Portfolio_Model extends CI_Model {
                 ),
                 'industries' => 'Industrial',
                 'types' => array('Industrial', 'Past-Projects'),
+                'embed_url' => '',
             ),
             array(
                 'name' => 'The Kauai Post',
@@ -178,6 +187,7 @@ class Portfolio_Model extends CI_Model {
                 ),
                 'industries' => 'Retail',
                 'types' => array('Retail', 'Past-Projects'),
+                'embed_url' => '',
             ),
             array(
                 'name' => 'Port of LA Industrial Center',
@@ -195,6 +205,7 @@ class Portfolio_Model extends CI_Model {
                 ),
                 'industries' => 'Industrial',
                 'types' => array('Industrial', 'Past-Projects'),
+                'embed_url' => '',
             ),
             array(
                 'name' => 'Stott Building',
@@ -212,6 +223,7 @@ class Portfolio_Model extends CI_Model {
                 ),
                 'industries' => 'Retail',
                 'types' => array('Retail', 'Past-Projects'),
+                'embed_url' => '',
             ),
             array(
                 'name' => 'The United Staffing Building',
@@ -229,6 +241,7 @@ class Portfolio_Model extends CI_Model {
                 ),
                 'industries' => 'Retail',
                 'types' => array('Retail', 'Past-Projects'),
+                'embed_url' => '',
             ),
             array(
                 'name' => 'Queens Industrial Center',
@@ -246,6 +259,7 @@ class Portfolio_Model extends CI_Model {
                 ),
                 'industries' => 'Retail',
                 'types' => array('Industrial', 'Retail', 'Holdings'),
+                'embed_url' => '',
             ),
             array(
                 'name' => 'Container City',
@@ -263,6 +277,7 @@ class Portfolio_Model extends CI_Model {
                 ),
                 'industries' => 'Retail',
                 'types' => array('Development', 'Industrial', 'Projects', 'Opportunities', 'Self-Storage', 'Retail', 'Multifamily', 'Past-Projects'),
+                'embed_url' => '',
             ),
             array(
                 'name' => 'Yuma Industrial Center',
@@ -280,6 +295,7 @@ class Portfolio_Model extends CI_Model {
                 ),
                 'industries' => 'Retail',
                 'types' => array('Industrial', 'Past-Projects'),
+                'embed_url' => '',
             ),
             array(
                 'name' => 'Bakersfield Industrial Center',
@@ -297,6 +313,7 @@ class Portfolio_Model extends CI_Model {
                 ),
                 'industries' => 'Industrial',
                 'types' => array('Industrial', 'Past-Projects'),
+                'embed_url' => '',
             ),
     );
 

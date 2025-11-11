@@ -15,5 +15,6 @@
 		$('#filtering-nav li').find('a.'+ triger).trigger('click');
 	    });
 	</script>
+    <?php if (isset($extra_body)) echo $extra_body; ?>
 </body>
 </html>

@@ -73,7 +73,7 @@
 			echo $company['types'][$j];
 		}
 		echo'">
-            	<a href="#' .strtolower(str_replace(' ', '-', $company['name'])) .'">';
+            	<a href="#' . slugify($company['name']) .'">';
 		?>
 
             <!-- Dispense company contents -->
@@ -106,7 +106,14 @@
                     <!-- Begin Content -->
                     <div class="content">
                         <h2><?=$company['name']?></h2>
-                        <p><?=$company['summary']?></p>  				
+                        <p><?=$company['summary']?></p>
+                        <?php
+                        if (!empty($company['embed_url'])) {
+                        ?>
+                            <a href="#" class="deck-link" data-slug="<?=slugify($company['name'])?>" onclick="openPresentationModal(event)">Deck</a>
+                        <?php
+                        }
+                        ?>
                         <div class="meta">
                             <?php
                             if($company['launch'] != '') {
@@ -147,10 +154,95 @@
   <!-- End Container -->
   </div>
   <!-- End Body Wrapper -->
-    
   <!--[if !IE]> -->
   <script type="text/javascript" src="/js/alphine/jquery.corner.js"></script>
   <!-- <![endif]-->
   <script type="text/javascript" src="/js/alphine/scripts.js"></script>
+  <script type="text/javascript">
+    function openPresentationModal(eventOrSlug) {
+        let presentationSlug;
+    
+        if (eventOrSlug instanceof Event) {
+            eventOrSlug.preventDefault();
+            presentationSlug = eventOrSlug.target.dataset.slug;
+        } else {
+            presentationSlug = eventOrSlug;
+        }
+
+        if (!presentationSlug) {
+            return;
+        }
+
+        const modalElement = document.getElementById('modal-' + presentationSlug);
+        modalElement.style.display = 'block';
+        document.documentElement.classList.add('modal-open');
+        document.body.classList.add('modal-open');
+
+        const url = new URL(window.location);
+        if (url.searchParams.get('modal') !== 'true') {
+            url.searchParams.set('modal', 'true');
+            const newUrl = url.pathname + url.search + url.hash;
+            window.history.pushState({}, '', newUrl);
+        }
+    };
+
+    function closePresentationModal(presentationSlug) {
+        const modalElement = document.getElementById('modal-' + presentationSlug);
+        modalElement.style.display = 'none';
+        document.documentElement.classList.remove('modal-open');
+        document.body.classList.remove('modal-open');
+        
+        const url = new URL(window.location);
+        url.searchParams.delete('modal');
+        
+        const newUrl = url.pathname + url.search + url.hash;
+        
+        window.history.replaceState({}, '', newUrl);
+    };
+
+    function handleClosePresentationModal(event) {
+        event.preventDefault();
+        const presentationSlug = event.target.dataset.slug;
+
+        if (!presentationSlug) {
+            return;
+        }
+        closePresentationModal(presentationSlug);
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        if (urlParams.get('modal') === 'true') {
+            if (window.location.hash) {
+                const presentationSlug = window.location.hash.slice(1);
+                if (presentationSlug) {
+                    openPresentationModal(presentationSlug);
+                }
+            }
+        }
+
+        document.querySelectorAll('.close-btn').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                const slug = this.dataset.slug;
+                closePresentationModal(slug);
+            });
+        });
+
+        document.addEventListener('click', function(event) {
+            const modal = document.querySelector('.modal[style*="display: block"]');
+
+            if (!modal) return;
+
+            if (event.target === modal) {
+                const closeBtnElement = modal.querySelector('span[data-slug]');
+                if (closeBtnElement) {
+                    const slug = closeBtnElement.dataset.slug;
+                    closePresentationModal(slug);
+                }
+            }
+        });
+    });
+  </script>
   
 </div>
