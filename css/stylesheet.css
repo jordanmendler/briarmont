@@ -1827,7 +1827,7 @@ body.modal-open {
     height: 90%;
     transform: translate(-50%, -50%);
     background-color: #fefefe;
-    padding: 20px;
+    /* padding: 20px; */
     border: 1px solid #888;
     width: 90%;
     height: 90%;

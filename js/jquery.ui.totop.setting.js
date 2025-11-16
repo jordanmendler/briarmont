@@ -1,5 +1,5 @@
-$(function(){
-$(document).ready(function() {
+//$(function(){
+//$(document).ready(function() {
 			/*
 			var defaults = {
 	  			containerID: 'moccaUItoTop', // fading element id
@@ -9,7 +9,10 @@ $(document).ready(function() {
 	 		};
 			*/
 			
-			$().UItoTop({ easingType: 'easeOutQuart' });
+//			$().UItoTop({ easingType: 'easeOutQuart' });
 			
-		});
+//		});
+//});
+jQuery(document).ready(function ($) {
+    $().UItoTop({ easingType: 'easeOutQuart' });
 });

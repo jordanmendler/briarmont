@@ -110,7 +110,7 @@
                         <?php
                         if (!empty($company['embed_url'])) {
                         ?>
-                            <a href="#" class="deck-link" data-slug="<?=slugify($company['name'])?>" onclick="openPresentationModal(event)">Deck</a>
+                            <a href="#" class="deck-link" data-slug="<?=slugify($company['name'])?>" onclick="openPresentationModal(event)">More Info</a>
                         <?php
                         }
                         ?>
@@ -178,6 +178,22 @@
         document.documentElement.classList.add('modal-open');
         document.body.classList.add('modal-open');
 
+        setTimeout(function() {
+            if (modalElement.querySelector('video') !== null) {
+                var player = videojs('video-' + presentationSlug);
+                player.ready(function() {
+                    var promise = player.play();
+                    if (promise !== undefined) {
+                        promise.then(function() {
+                            //console.log('Autoplay started!');
+                        }).catch(function(error) {
+                            //console.log('Autoplay was prevented.');
+                        });
+                    }
+                });
+            }
+        }, 500);
+
         const url = new URL(window.location);
         if (url.searchParams.get('modal') !== 'true') {
             url.searchParams.set('modal', 'true');
@@ -191,7 +207,13 @@
         modalElement.style.display = 'none';
         document.documentElement.classList.remove('modal-open');
         document.body.classList.remove('modal-open');
-        
+
+        if (modalElement.querySelector('video') !== null) {
+            var player = videojs('video-' + presentationSlug);
+
+            player.pause();
+        }
+
         const url = new URL(window.location);
         url.searchParams.delete('modal');
         

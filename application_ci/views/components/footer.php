@@ -16,5 +16,6 @@
 	    });
 	</script>
     <?php if (isset($extra_body)) echo $extra_body; ?>
+    <script src="https://vjs.zencdn.net/8.23.4/video.min.js"></script>
 </body>
 </html>

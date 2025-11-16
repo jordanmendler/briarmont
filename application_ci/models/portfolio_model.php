@@ -277,7 +277,7 @@ class Portfolio_Model extends CI_Model {
                 ),
                 'industries' => 'Retail',
                 'types' => array('Development', 'Industrial', 'Projects', 'Opportunities', 'Self-Storage', 'Retail', 'Multifamily', 'Past-Projects'),
-                'embed_url' => '',
+                'embed_url' => 'https://containercity.xyz/video/containercity_720p.mp4',
             ),
             array(
                 'name' => 'Yuma Industrial Center',

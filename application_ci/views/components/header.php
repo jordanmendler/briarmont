@@ -31,7 +31,7 @@
 <!-- ================ -->
 <link href="/css/stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="/css/animation.css" rel="stylesheet" type="text/css" />
-
+<link href="https://vjs.zencdn.net/8.23.4/video-js.css" rel="stylesheet" />
 
 <!-- Override css if color is defined (i.e. for division or foundation pages) -->
 <?php
