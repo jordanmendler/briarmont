@@ -6,15 +6,7 @@
 	foreach ($divisions as $data)
 	{
 		$i++;
-
-                if ( $i > 3 &&  $i % 3 == 1)
-                {
-			echo '<li class="clear">';
-                }
-                else
-                {
-                        echo '<li>';
-                }
+		echo '<li>';
 ?>
 
 <?php
