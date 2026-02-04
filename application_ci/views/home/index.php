@@ -7,7 +7,7 @@
 		$(".plus").css('margin-top', '-800px');
 		$("#main").css('overflow', 'visible');
 		$("#content").css('overflow', 'visible');
-		$("#wrapper").css('width', '100%');
+		//$("#wrapper").css('width', '100%');
 		$("#wrapper").css('overflow', 'hidden');
 		
 

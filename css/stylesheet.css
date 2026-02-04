@@ -125,16 +125,16 @@ thead{font-weight:bold;}
 #main{float:left; margin-left:0px; background:url(../images/site/dotb.png) left repeat-y; width:720px;}
 
 /* Tablet - reduce width */
-@media (max-width: 999px) and (min-width: 675px) {
+/* @media (max-width: 999px) and (min-width: 675px) {
 	#inside{width:100%;}
 	#main{width:calc(100% - 190px);}
-}
+} */
 
 /* Mobile - fixed width */
-@media (max-width: 674px) {
+/* @media (max-width: 674px) {
 	#inside{width:674px;}
 	#main{width:484px;}
-}
+} */
 
 
 /* ===== content ===== */
@@ -231,13 +231,17 @@ thead{font-weight:bold;}
 .pf_gallery h2{margin-bottom:10px}
 
 /* Desktop - 3 columns */
-@media (min-width: 1000px) {
+/* @media (min-width: 1000px) {
 	.pf_gallery{grid-template-columns:repeat(3, 1fr); height:450px;}
-}
+} */
 
 /* Mobile - 2 columns */
-@media (max-width: 999px) {
+/* @media (max-width: 999px) {
 	.pf_gallery{grid-template-columns:repeat(2, 1fr);}
+} */
+.pf_gallery {
+    grid-template-columns: repeat(3, 1fr);
+    height: 450px;
 }
 
 .pf_gallery_3{list-style-type:none; padding:0; margin:0; width:680px; overflow:hidden;}
