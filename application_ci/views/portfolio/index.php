@@ -52,7 +52,7 @@
             <li><a class="Self-Storage" href="Self-Storage">Self-Storage</a></li>
             <li><a class="Retail" href="Retail">Retail</a></li>
             <li><a class="Multifamily" href="Multifamily">Multifamily</a></li>
-            <li><a class="Development" href="Development">Development</a></li>
+            <li><a class="Medical-Office" href="Medical-Office">Medical Office</a></li>
             <li style="visibility: hidden"><a class="Holdings" href="Holdings">Holdings</a></li>
             <li style="visibility: hidden"><a class="Past-Projects" href="Past-Projects">Past-Projects</a></li>
             <li style="visibility: hidden"><a class="Opportunities" href="Opportunities">Opportunities</a></li>
@@ -79,9 +79,8 @@
             <!-- Dispense company contents -->
             <span class="overlay open">
                 <strong><?=$company['name']?></strong>
-                <em><br/><?=$company['tagline']?></em>
             </span>
-            <img src="<?=$company['icon']?>" alt="" />
+            <img src="<?=$company['image']?>" alt="" />
             <p class="name"><?= $company['name'] ?></p>
             <p class="summary"><?= $company['summary'] ?></p>
         </a>
@@ -91,12 +90,9 @@
                     <div class="slides">
                         <div class="slides_container">
                         <?php 
-                        
-                        for($j = 0; $j < count($company['images']); $j++) {
                             echo '<img src="';
-                            echo $company['images'][$j];
+                            echo $company['image'];
                             echo '" width="380" height="380" alt=""> ';
-                        } 
                         ?>
                         </div>
                         <a href="#" class="prev"></a>
@@ -114,25 +110,6 @@
                         <?php
                         }
                         ?>
-                        <div class="meta">
-                            <?php
-                            if($company['launch'] != '') {
-                                echo '<span><em>Launch Date:  </em>';
-                                echo $company['launch'];
-                                echo '</span>';
-                            } else{
-                                                
-                            }
-                            ?>
-                            <!-- <span><em>Industries:  </em><?=$company['industries']?></span> -->
-                            <?php
-                            if($company['link'] != '') {?>
-                                <span  class="<?php if($company['name'] == 'Custom Tobacco'){ echo $company['name'];}?>"><!-- <em>Link:  </em>  --><a href="<?=$company['link']?>" target="_blank"><?=$company['link']?></a></span>
-                            <?php }else{
-                                // Do nothing
-                            }
-                            ?>
-                        </div>
                     </div>
                     <!-- End Content -->
   			        <div class="clear"></div><div class="divider"></div>

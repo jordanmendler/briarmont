@@ -19,8 +19,12 @@
 	{
 ?>
 		<div id="<?= str_replace(' ', '-', str_replace('"', '',  $person['name'])) ?>"></div>
-		<div class="line"></div>
-
+		<?php
+	       		if (count($people) > 1)
+			{
+				echo '<div class="line"></div>';
+			}
+		?>
 		<style type="text/css">
 			.slideshow { height: 250px; width: 250px; margin: 4px 20px 4px 0;float: left}
 			.slideshow img { padding: 0px; border: 1px solid #ccc; background-color: #eee; }

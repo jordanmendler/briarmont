@@ -20,7 +20,6 @@ class Navmenu_Model extends CI_Model
 				*/
 				array(	"/portfolio"				=> "Portfolio",
 					"#Holdings"				=> "Holdings",
-					"#Past-Projects"				=> "Past Projects",
 					"#Opportunities"				=> "Opportunities",
 				),
 				array(	"/about"				=> "About Us",
