@@ -251,7 +251,7 @@ thead{font-weight:bold;}
 .pf_gallery_3 img{margin-bottom:8px;}
 
 /* ===== rollover image style ===== */
-.pic_hover a .rollover{background:url(../images/site/icon-hover-1.png) no-repeat center #425968; display:block; position:absolute; z-index:10; display:none; cursor:pointer;}
+.pic_hover a .rollover{background:url(../images/site/icon-hover-1.png) no-repeat center #425968; display:block; position:absolute; top:0; z-index:10; display:none; cursor:pointer;}
 .pic_hover a .rollover .text{padding:40px; color:#FFF;}
 .cool_pf img{width:620px; height:465px;}
 .cool_pf .pic_hover a .rollover{width:620px; height:465px; margin:10px 0 0 10px; background-color:#425968;}
@@ -1724,10 +1724,11 @@ img.high-index{//z-index: 200;position: relative;}
 }
 /* .half-one ul{margin-top:20px;} */
 #squares .col4{width:260px !important;height:310px !important;margin-left:40px !important;margin-bottom: 10px !important}
-#squares .col4 img{width:250px !important;padding: 15px 20px;}
+#squares .col4 img{width:220px !important;height: 168px !important;padding: 15px 20px;}
 .Custom.Tobacco{margin-top: -12px !important;}
 #squares .col4 .name, #squares .col4 .summary {padding-left: 20px;padding-bottom: 0;text-align: left}
 #squares .col4 .name {font-weight: bold;}
+#squares .col4 .summary {padding-bottom: 15px;}
 
 .cards1{    position: absolute;
     backface-visibility: hidden;
