@@ -12,14 +12,14 @@ class Portfolio_Model extends CI_Model {
             array(
                 'name' => 'Rochester Medical',
                 'summary' => "Rochester, NY<br/>13 units",
-                'image' => '/images/portfolio/Rochester.png',
+                'image' => '/images/portfolio/Rochester.jpg',
                 'types' => array('Opportunities', 'Medical-Office'),
                 'embed_url' => '',
             ),
             array(
                 'name' => 'Columbia Mobile Home Park',
                 'summary' => "Columbia, SC<br/>13 units",
-                'image' => '/images/portfolio/8460-Old-Percival.png',
+                'image' => '/images/portfolio/8460-Old-Percival.jpg',
                 'types' => array('Opportunities', 'Multifamily'),
                 'embed_url' => '',
             ),
@@ -33,14 +33,14 @@ class Portfolio_Model extends CI_Model {
             array(
                 'name' => 'Rosamond & 48th',
                 'summary' => "Rosamond, CA<br/>29.3 acres",
-                'image' => '/images/portfolio/Rosamond.png',
+                'image' => '/images/portfolio/Rosamond.jpg',
                 'types' => array('Opportunities', 'Multi-family'),
                 'embed_url' => '',
             ),
             array(
                 'name' => 'Briarmont SBD',
                 'summary' => "San Bernardino, CA<br/>27,000SF",
-                'image' => '/images/portfolio/Briarmont_SBD.png',
+                'image' => '/images/portfolio/Briarmont_SBD.jpg',
                 'types' => array('Opportunities', 'Self-Storage'),
                 'embed_url' => 'https://docs.google.com/presentation/d/e/2PACX-1vS_4SPHKmpOB4wbVd9B82QmtoYwBH0jHqW_YQUA6ON3ujyEEPH71t6r3-QXbb0F16MwYmmObMRngmhK/pubembed?start=false&loop=false&delayms=5000',
             ),
@@ -68,7 +68,7 @@ class Portfolio_Model extends CI_Model {
             array(
                 'name' => 'Baltimore Residential Portfolio',
                 'summary' => "Baltimore, MD<br/>4 units",
-                'image' => '/images/portfolio/Baltimore.png',
+                'image' => '/images/portfolio/Baltimore.jpg',
                 'types' => array('Multi-family', 'Holdings'),
                 'embed_url' => '',
             ),
