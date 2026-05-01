@@ -14,24 +14,28 @@ $(document).ready(function() {
 		$(".plus").show(1000);
 		$(".min").hide();
 
-		// Open us
-		$(this).slideToggle(1000);
+		// Open us - use hide()/show() instead of slideToggle() to preserve white color
+		$(this).hide(1000);
 		$(".min").show();
-		$(this).next(".hide_content").slideToggle(1000);
-		$(this).next(".min").slideToggle(1000);
+		$(this).next(".hide_content").show(1000);
+		$(this).next(".min").show(1000);
 	});
   
 
 	$(".min").click(function()
 	{
-		$(this).parent().prev(".plus").slideToggle(1000);
-		$(this).parent().slideToggle(1000);
-		$(this).fadeOut(10);
+		// Use show()/hide() instead of slideToggle() to preserve white color
+		$(this).parent().prev(".plus").show(1000);
+		$(this).parent().hide(1000);
+		$(this).hide();
 	});
 
 
 	$(".image").click(function()
 	{
+		// Fade out rollover during animation to prevent rendering issues
+		$(this).find('.rollover').fadeOut(100);
+
 		// If open, close all
 		if (  $(this).parent().next().next(".hide_content").is(":visible") )
 		{
@@ -46,11 +50,10 @@ $(document).ready(function() {
 			$(".hide_content").hide(1000);
 			$(".plus").show(1000);
 
-			// Open this one
-			$(".min").slideToggle(1000);
+			// Open this one - use hide()/show() instead of slideToggle() to preserve white color
+			$(".min").show(1000);
 			$(this).parent().next(".plus").hide(1000);
-			$(this).parent().next().next(".hide_content").slideToggle(1000);
-			$(this).parent().css('z-index', '100000');
+			$(this).parent().next().next(".hide_content").show(1000);
 		}
 	}); 
 });
