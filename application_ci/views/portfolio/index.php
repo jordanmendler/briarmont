@@ -138,7 +138,7 @@
   <script type="text/javascript">
     function openPresentationModal(eventOrSlug) {
         let presentationSlug;
-    
+
         if (eventOrSlug instanceof Event) {
             eventOrSlug.preventDefault();
             presentationSlug = eventOrSlug.target.dataset.slug;
@@ -151,6 +151,23 @@
         }
 
         const modalElement = document.getElementById('modal-' + presentationSlug);
+        
+        // Lazy-load iframe if it's not a video modal
+        if (modalElement.querySelector('video') === null && modalElement.querySelector('iframe') === null) {
+            const embedUrl = modalElement.getAttribute('data-embed-url');
+            if (embedUrl) {
+                const modalContent = modalElement.querySelector('.modal-content');
+                const iframe = document.createElement('iframe');
+                iframe.src = embedUrl;
+                iframe.frameborder = '0';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.setAttribute('allow', 'fullscreen; clipboard-write');
+                iframe.setAttribute('allowfullscreen', 'true');
+                modalContent.appendChild(iframe);
+            }
+        }
+        
         modalElement.style.display = 'block';
         document.documentElement.classList.add('modal-open');
         document.body.classList.add('modal-open');

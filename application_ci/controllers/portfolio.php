@@ -38,14 +38,12 @@ class Portfolio extends MY_Controller
                     </div>
                     ';
                 } else {
+                    // Lazy-load iframe - don\'t set src until modal is opened
                     $this->data['extra_body'] .= '
-                    <div id="modal-' . slugify($company['name']) . '" class="modal" style="display: none;">
+                    <div id="modal-' . slugify($company['name']) . '" class="modal" style="display: none;" data-embed-url="' . $company['embed_url'] . '">
                         <span data-slug="' . slugify($company['name']) . '" class="close-btn">&times;</span>
                         <div class="modal-content">
-                            <iframe 
-                                src="'. $company['embed_url'] .'" frameborder="0"
-                                style="width: 100%; height: 100%;" allow="fullscreen; clipboard-write" allowfullscreen>
-                            </iframe>
+                            <!-- iframe loaded lazily on modal open -->
                         </div>
                     </div>
                     ';
