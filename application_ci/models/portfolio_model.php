@@ -11,7 +11,7 @@ class Portfolio_Model extends CI_Model {
     var $data = array(
             array(
                 'name' => 'Rochester Medical',
-                'summary' => "Rochester, NY<br/>13 units",
+                'summary' => "Rochester, NY<br/>50,136 SF",
                 'image' => '/images/portfolio/Rochester.jpg',
                 'types' => array('Opportunities', 'Medical-Office'),
                 'embed_url' => '',
