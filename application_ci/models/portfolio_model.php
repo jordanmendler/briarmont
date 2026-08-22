@@ -28,7 +28,7 @@ class Portfolio_Model extends CI_Model {
                 'summary' => "In Development",
                 'image' => '/images/portfolio/Container_City.jpg',
                 'types' => array('Industrial', 'Opportunities', 'Self-Storage', 'Retail', 'Multifamily', 'Medical-Office'),
-                'embed_url' => 'https://drive.google.com/file/d/16GAdx3HcF06JMKRp1IVYIjftTg6jfhH-/view',
+                'embed_url' => 'https://briarmont.com/images/portfolio/container-city.mp4',
             ),
             array(
                 'name' => 'Rosamond & 48th',
