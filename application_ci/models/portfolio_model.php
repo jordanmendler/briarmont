@@ -28,14 +28,14 @@ class Portfolio_Model extends CI_Model {
                 'summary' => "In Development",
                 'image' => '/images/portfolio/Container_City.jpg',
                 'types' => array('Industrial', 'Opportunities', 'Self-Storage', 'Retail', 'Multifamily', 'Medical-Office'),
-                'embed_url' => 'https://containercity.xyz/video/containercity_720p.mp4',
+                'embed_url' => 'https://drive.google.com/file/d/16GAdx3HcF06JMKRp1IVYIjftTg6jfhH-/view',
             ),
             array(
                 'name' => 'Rosamond & 48th',
                 'summary' => "Rosamond, CA<br/>29.3 acres",
                 'image' => '/images/portfolio/Rosamond.png',
                 'types' => array('Opportunities', 'Multifamily'),
-                'embed_url' => '',
+                'embed_url' => 'https://docs.google.com/presentation/d/1LMrvslPtiTrCMSkO6X2v9oW5wRwOjItomP0nhOL9OzE',
             ),
             array(
                 'name' => 'Briarmont SBD',
