@@ -12,14 +12,14 @@ class Portfolio_Model extends CI_Model {
             array(
                 'name' => 'Rochester Medical',
                 'summary' => "Rochester, NY<br/>50,816 SF",
-                'image' => '/images/portfolio/Rochester.png',
+                'image' => '/images/portfolio/Rochester.jpg',
                 'types' => array('Opportunities', 'Medical-Office'),
                 'embed_url' => '',
             ),
             array(
                 'name' => 'Columbia Mobile Home Park',
                 'summary' => "Columbia, SC<br/>13 units",
-                'image' => '/images/portfolio/8460-Old-Percival.png',
+                'image' => '/images/portfolio/8460-Old-Percival.jpg',
                 'types' => array('Opportunities', 'Multifamily'),
                 'embed_url' => '',
             ),
@@ -33,14 +33,14 @@ class Portfolio_Model extends CI_Model {
             array(
                 'name' => 'Rosamond & 48th',
                 'summary' => "Rosamond, CA<br/>29.3 acres",
-                'image' => '/images/portfolio/Rosamond.png',
+                'image' => '/images/portfolio/Rosamond.jpg',
                 'types' => array('Opportunities', 'Multifamily'),
                 'embed_url' => 'https://docs.google.com/presentation/d/1LMrvslPtiTrCMSkO6X2v9oW5wRwOjItomP0nhOL9OzE',
             ),
             array(
                 'name' => 'Briarmont SBD',
                 'summary' => "San Bernardino, CA<br/>27,000 SF",
-                'image' => '/images/portfolio/Briarmont_SBD.png',
+                'image' => '/images/portfolio/Briarmont_SBD.jpg',
                 'types' => array('Opportunities', 'Self-Storage'),
                 'embed_url' => 'https://docs.google.com/presentation/d/e/2PACX-1vS_4SPHKmpOB4wbVd9B82QmtoYwBH0jHqW_YQUA6ON3ujyEEPH71t6r3-QXbb0F16MwYmmObMRngmhK/pubembed?start=false&loop=false&delayms=5000',
             ),
