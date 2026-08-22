@@ -35,7 +35,7 @@ class Portfolio_Model extends CI_Model {
                 'summary' => "Rosamond, CA<br/>29.3 acres",
                 'image' => '/images/portfolio/Rosamond.jpg',
                 'types' => array('Opportunities', 'Multifamily'),
-                'embed_url' => 'https://docs.google.com/presentation/d/1LMrvslPtiTrCMSkO6X2v9oW5wRwOjItomP0nhOL9OzE',
+                'embed_url' => 'https://docs.google.com/presentation/d/e/2PACX-1vQJz_1Pwz6LwtzfKaqJQXrqnhzM3iBdQBrHokEVCcIrljVpgrV9dzoHFQUEiuNQPbMX0yrn9vnFv7bY/pubembed?start=false&loop=false&delayms=5000',
             ),
             array(
                 'name' => 'Briarmont SBD',
